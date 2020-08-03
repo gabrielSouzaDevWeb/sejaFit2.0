@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  height: 200vh; }
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  background-color: #353535;
+  justify-content: center;
+  align-items: center; }
+
+ul {
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none; }
+  ul li a {
+    display: inline-flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    margin-top: 1vh;
+    padding: 4vh 1.25em 4vh 1.25em;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    text-transform: uppercase;
+    transition: background-color 0.5s; }
+    ul li a.has-dropdown::before {
+      content: '';
+      position: absolute;
+      margin-top: 2px;
+      top: 50%;
+      bottom: auto;
+      right: 4%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border: 4px solid transparent;
+      border-top: 4px solid #ffffff; }
+    ul li a.--active {
+      background-color: orange;
+      padding-top: 4vh;
+      padding-bottom: 5vh; }
+      ul li a.--active::after {
+        position: absolute;
+        top: 8vh;
+        content: "";
+        justify-self: center;
+        width: 30%;
+        height: 0;
+        border-bottom: 2px solid #353535; }
+    ul li a:hover {
+      background-color: orange; }
+      ul li a:hover.has-dropdown::before {
+        transform: translateY(-70%);
+        top: 46%;
+        border: 4px solid transparent;
+        border-bottom: 4px solid #ffffff; }
+
+/*# sourceMappingURL=index.css.map */

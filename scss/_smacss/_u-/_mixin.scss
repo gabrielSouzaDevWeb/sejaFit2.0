@@ -1,0 +1,42 @@
+//vars
+$primaryColor:green ;//#007BFF
+$boxModelPadding:2% 1% 5% 0%;
+//lighten($color: blue, $amount: 20%)
+%spacinWrap{
+    padding: 0% 12.5% 0% 12.5%;
+    clear: both;
+}
+
+@mixin btn($btnColor : $primaryColor, $padding: 2%,$fontSize : 18px, $radius : 5px){
+    text-decoration: none;
+    background-color: $btnColor;
+    color: white;
+    padding: $padding;
+    border-radius: $radius;
+    @include fontSans($fontSize,400);
+    &:hover{
+        background-color: darken($btnColor, 5%);
+    }
+}
+@mixin fontSans($size, $weight : 300){
+    font:{
+        family: 'Ubuntu', sans-serif;
+        weight: $weight;
+        size: $size;
+    }
+    
+}
+@mixin menuLink($colortext){
+    line-height: 0;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+    @include fontSans(15px);
+    text-transform: capitalize;
+    color: change-color($color : $colortext, $alpha: 0.75);
+    &.active{
+        color: $colortext;
+    }
+    &:hover, &:focus{
+        color:change-color($color : $colortext, $alpha: 0.9);
+    }
+}
