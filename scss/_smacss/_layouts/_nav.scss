@@ -1,4 +1,4 @@
-$bgcolor: #353535;
+$bgcolor: #1F2024;
 $secondColor: orange;
 
 @mixin nav($bgcolor,$secondColor) {
@@ -45,6 +45,7 @@ $secondColor: orange;
         background-color: $bgcolor;
         justify-content:center;
         position: fixed;
+        top:0;
         img{
             align-self: center;
             margin: 0 2em;            

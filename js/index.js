@@ -1,0 +1,1 @@
+window.indexCtrls = new Ctrls();

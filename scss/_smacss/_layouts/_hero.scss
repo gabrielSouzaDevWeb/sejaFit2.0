@@ -1,0 +1,51 @@
+@mixin hero(){
+    .l-hero{
+        position: relative;
+        top: 8vh;
+        background-color: salmon;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+       
+        &-container{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            .c-board{
+                position: absolute;
+                top:0;
+                width: 75%;
+                display: grid;
+                //margin: 0;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,30vh);
+                grid-gap: 1px;
+                &__item{
+                    background-color: green;
+                    font-size: 2em;
+                    text-align: center;
+                    line-height: 30vh;
+                }
+                
+            }
+            &:nth-child(1){
+                z-index: 5;
+            }
+            &:nth-child(2){
+                z-index: 0;
+               
+            }
+            &:nth-child(3){
+                z-index: -5;
+                
+            }
+            
+
+        }
+
+        
+    }
+}
+@include hero();
