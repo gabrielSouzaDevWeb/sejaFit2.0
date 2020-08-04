@@ -1,125 +1,121 @@
+$bgcolor: #353535;
+$secondColor: orange;
 
-@mixin nav() {
+@mixin nav($bgcolor,$secondColor) {
+    %c-menu__link{
+        display: inline-flex;
+        @include fontSans(13px);
+        color: white;
+        text-decoration: none;
+        margin-top: 0;
+        padding: 3vh 1.25em 3vh 1.25em;
+        justify-content: center;
+        background-color: transparent ;
+        position: relative;
+        text-transform: uppercase;
+        transition: background-color 0.35s ;                    
+        &.has-dropdown::before{//possivel problema -- solução tornar filho direto de .c-menu
+            content: '';
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            margin-top: 2px;                        
+            bottom: auto;
+            right: 4%;                        
+            width: 0;
+            height: 0;
+            border: 4px solid transparent;
+            border-top: 4px solid #ffffff;
+        }
+        
+        &:hover{
+            background-color: $secondColor;
+            &.has-dropdown::before{
+                transform: translateY(-70%);
+                top: 46%;
+                border: 4px solid transparent;
+                border-bottom: 4px solid #ffffff;
+            }
+        }
+    }
     nav{
         display: flex;
         width: 100%;
-        height: 10vh;
-        background-color: #353535;
+        height: 8vh;
+        background-color: $bgcolor;
         justify-content:center;
         position: fixed;
         img{
             align-self: center;
-            margin: 0 2em;
-            
+            margin: 0 2em;            
         }
-        ul{
+        .c-menu{
             display: flex;
             list-style: none;
             position: relative;
             margin: 0;
-            padding:0;
-            //transform: translateY(-60%);
-            
-            li{
-                margin-right: 0;
-                //position: relative;
-           
-                a{
-                    display: inline-flex;
-                    @include fontSans(13px);
-                    color: white;
-                    text-decoration: none;
-                    margin-top: 0;
-                    padding: 4vh 1.25em 4vh 1.25em;
-                    justify-content: center;
-                    background-color: transparent ;
-                    position: relative;
-                    text-transform: uppercase;
-                    transition: background-color 0.35s ;
-                    
-                    &.has-dropdown::before{
-                        content: '';
-                        position: absolute;
-                        transform: translateY(-50%);
-                        top: 50%;
-                        margin-top: 2px;
-                        
-                        bottom: auto;
-                        right: 4%;
-                        
-                        width: 0;
-                        height: 0;
-                        border: 4px solid transparent;
-                        border-top: 4px solid #ffffff;
-                        //transition: border 0.5s;
-                    }
-                    &.--active{
-                        background-color: orange;
-                        padding-top: 4vh;
-                        padding-bottom: 5vh;
-                        &::after{
-                            position: absolute;
-                            top: 8vh;
-                            //align-items: center;
-                            content: "";
-                            justify-self: center;
-                            width: 30%;
-                            height: 0;
-                            border-bottom: 2px solid #353535;
-                        }
-                    }
-                    &:hover{
-                        background-color: orange;
-                        &.has-dropdown::before{
-                            transform: translateY(-70%);
-                            top: 46%;
-                            
-                            border: 4px solid transparent;
-                            border-bottom: 4px solid #ffffff;
-                        }
-                    }
-                    
-                }
+            padding:0;            
+            &__item{       
                 &:hover{
-                    li{
+                    .c-menu__dropdown-item{
                         a{
                         display: block;}
                     }
-                }
-                
+                }           
             }
-            ul{
-                background-color: #353535;
+            &__link{
+                @extend %c-menu__link;
+                &--active{//problema de verbose
+                    @extend %c-menu__link;
+                    background-color: $secondColor;
+                    padding-top: 3vh;
+                    padding-bottom: 4vh;
+                    &::after{
+                        position: absolute;
+                        top: 6vh;                            
+                        content: "";
+                        justify-self: center;
+                        width: 30%;
+                        height: 0;
+                        border-bottom: 2px solid $bgcolor;
+                    }
+                }                    
+            }
+            
+            &__dropdown{
+                background-color: $bgcolor;
                 position: absolute;
+                list-style: none;
+                list-style-type: none;
                 display: block;
                 padding: 0;
-                border-top: 2px solid orange;
-                margin-top: -1px;
-
-                
-                li{
-                    a{
-                        display: none;
-                        font-family: sans-serif;
-                        color: white;
-                        padding:0.8em 3em 0.8em 1em;
-                        transition: color 0.35s;
-                        text-transform: capitalize;
-                        &:hover{
-                            color: orange;
-                            background-color: transparent;
-                        }
-                        
-                    }
-                    &:last-child a{
-                        padding-bottom: 1em;
-                    }
+                border-top: 2px solid $secondColor;
+                margin-top: -1px;                
+                &-item{
+                    list-style: none;
+                    list-style-image:none;
+                    
+                }    
+                &-link{
+                    @include fontSans(14px);
+                    text-decoration: none;
+                    display: none;
+                    font-family: sans-serif;
+                    color: white;
+                    padding:0.8em 3em 0.8em 0.8em;
+                    transition: color 0.25s;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: $secondColor;
+                        background-color: transparent;
+                    }                        
                 }
-               
-            }
-           
+                &:last-child a{
+                    padding-bottom: 1em;
+                }
+                               
+            }           
         }
-    }
-    
+    }    
 }
-@include nav();
+@include nav($bgcolor, $secondColor);
