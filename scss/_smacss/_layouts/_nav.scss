@@ -45,6 +45,7 @@ $secondColor: orange;
         background-color: $bgcolor;
         justify-content:center;
         position: fixed;
+        z-index: 9999;
         top:0;
         img{
             align-self: center;

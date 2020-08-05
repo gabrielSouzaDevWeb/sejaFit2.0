@@ -54,6 +54,7 @@ nav {
   background-color: #1F2024;
   justify-content: center;
   position: fixed;
+  z-index: 9999;
   top: 0; }
   nav img {
     align-self: center;
@@ -126,18 +127,17 @@ nav {
       width: 75%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 30vh);
+      grid-template-rows: repeat(2, 35vh);
       grid-gap: 1px; }
       .l-hero-container .c-board__item {
-        background-color: green;
         font-size: 2em;
         text-align: center;
         line-height: 30vh; }
-    .l-hero-container:nth-child(1) {
-      z-index: 5; }
-    .l-hero-container:nth-child(2) {
-      z-index: 0; }
-    .l-hero-container:nth-child(3) {
-      z-index: -5; }
+    .l-hero-container:nth-child(1) .c-board__item {
+      background-color: orange; }
+    .l-hero-container:nth-child(2) .c-board__item {
+      background-color: green; }
+    .l-hero-container:nth-child(3) .c-board__item {
+      background-color: red; }
 
 /*# sourceMappingURL=index.css.map */
