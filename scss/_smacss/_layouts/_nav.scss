@@ -47,16 +47,28 @@ $secondColor: orange;
         position: fixed;
         z-index: 9999;
         top:0;
+        @media only screen and (max-width:62.5em){
+            justify-content: space-between;
+            
+        }
         img{
             align-self: center;
-            margin: 0 2em;            
+            margin: 0 1em; 
+            @media only screen and (max-width:62.5em){
+                align-self: center;
+                margin: 0 1em;
+                
+            }           
         }
         .c-menu-desktop{
             display: flex;
             list-style: none;
             position: relative;
             margin: 0;
-            padding:0;            
+            padding:0;
+            @media only screen and (max-width:62.5em){
+                display: none;
+            }       
             &__item{       
                 &:hover{
                     .c-menu-desktop__dropdown-item{
@@ -117,6 +129,18 @@ $secondColor: orange;
                 }
                                
             }           
+        }
+        .c-menu-mobile{
+            display:none;
+            @media only screen and (max-width:62.5em){
+                display: flex;
+                align-self: center;
+                padding: 1em;
+                
+                
+                
+            }
+
         }
     }    
 }

@@ -1,31 +1,40 @@
 @mixin hero(){
     .l-hero{
         position: relative;
-        top: 8vh;
+        top: 10vh;
         background-color: salmon;
         z-index: -1;
         display: flex;
         justify-content: center;
        
         &-container{
+
             display: flex;
             justify-content: center;
             position: absolute;
             width: 100%;
+            max-width: 70%;
+            min-width: 400px;
+            @media only screen and (max-width:62.5em) { //1000px
+                
+            }
             margin: 0;
             .c-board{
                 position: absolute;
                 top:0;
-                width: 75%;
+                width: 100%;
                 display: grid;
                 //margin: 0;
                 grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(2,35vh);
+                grid-template-rows: repeat(2,35vh);//maybe auto-rows
+                @media only screen and (max-width:62.5em) { //1000px
+                    grid-template-rows: repeat(2,25vh);
+                }
                 grid-gap: 1px;
                 &__item{
-                    font-size: 2em;
+                    /*font-size: 2em;
                     text-align: center;
-                    line-height: 30vh;
+                    line-height: 30vh;*/
                     
                 }
             }
