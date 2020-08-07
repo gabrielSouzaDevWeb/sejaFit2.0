@@ -13,7 +13,7 @@ ul {
     list-style-type: none;
     list-style-image: none; }
 
-nav .c-menu__link, nav .c-menu__link--active {
+nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
@@ -27,7 +27,7 @@ nav .c-menu__link, nav .c-menu__link--active {
   position: relative;
   text-transform: uppercase;
   transition: background-color 0.35s; }
-  nav .has-dropdown.c-menu__link::before, nav .has-dropdown.c-menu__link--active::before {
+  nav .has-dropdown.c-menu-desktop__link::before, nav .has-dropdown.c-menu-desktop__link--active::before {
     content: '';
     position: absolute;
     transform: translateY(-50%);
@@ -39,9 +39,9 @@ nav .c-menu__link, nav .c-menu__link--active {
     height: 0;
     border: 4px solid transparent;
     border-top: 4px solid #ffffff; }
-  nav .c-menu__link:hover, nav .c-menu__link--active:hover {
+  nav .c-menu-desktop__link:hover, nav .c-menu-desktop__link--active:hover {
     background-color: orange; }
-    nav .c-menu__link:hover.has-dropdown::before, nav .c-menu__link--active:hover.has-dropdown::before {
+    nav .c-menu-desktop__link:hover.has-dropdown::before, nav .c-menu-desktop__link--active:hover.has-dropdown::before {
       transform: translateY(-70%);
       top: 46%;
       border: 4px solid transparent;
@@ -59,19 +59,19 @@ nav {
   nav img {
     align-self: center;
     margin: 0 2em; }
-  nav .c-menu {
+  nav .c-menu-desktop {
     display: flex;
     list-style: none;
     position: relative;
     margin: 0;
     padding: 0; }
-    nav .c-menu__item:hover .c-menu__dropdown-item a {
+    nav .c-menu-desktop__item:hover .c-menu-desktop__dropdown-item a {
       display: block; }
-    nav .c-menu__link--active {
+    nav .c-menu-desktop__link--active {
       background-color: orange;
       padding-top: 3vh;
       padding-bottom: 4vh; }
-      nav .c-menu__link--active::after {
+      nav .c-menu-desktop__link--active::after {
         position: absolute;
         top: 6vh;
         content: "";
@@ -79,7 +79,7 @@ nav {
         width: 30%;
         height: 0;
         border-bottom: 2px solid #1F2024; }
-    nav .c-menu__dropdown {
+    nav .c-menu-desktop__dropdown {
       background-color: #1F2024;
       position: absolute;
       list-style: none;
@@ -88,10 +88,10 @@ nav {
       padding: 0;
       border-top: 2px solid orange;
       margin-top: -1px; }
-      nav .c-menu__dropdown-item {
+      nav .c-menu-desktop__dropdown-item {
         list-style: none;
         list-style-image: none; }
-      nav .c-menu__dropdown-link {
+      nav .c-menu-desktop__dropdown-link {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 300;
         font-size: 14px;
@@ -102,10 +102,10 @@ nav {
         padding: 0.8em 3em 0.8em 0.8em;
         transition: color 0.25s;
         text-transform: capitalize; }
-        nav .c-menu__dropdown-link:hover {
+        nav .c-menu-desktop__dropdown-link:hover {
           color: orange;
           background-color: transparent; }
-      nav .c-menu__dropdown:last-child a {
+      nav .c-menu-desktop__dropdown:last-child a {
         padding-bottom: 1em; }
 
 .l-hero {

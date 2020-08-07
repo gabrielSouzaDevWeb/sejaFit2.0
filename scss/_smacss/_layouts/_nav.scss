@@ -14,7 +14,7 @@ $secondColor: orange;
         position: relative;
         text-transform: uppercase;
         transition: background-color 0.35s ;                    
-        &.has-dropdown::before{//possivel problema -- solução tornar filho direto de .c-menu
+        &.has-dropdown::before{//possivel problema -- solução tornar filho direto de .c-menu-desktop
             content: '';
             position: absolute;
             transform: translateY(-50%);
@@ -51,7 +51,7 @@ $secondColor: orange;
             align-self: center;
             margin: 0 2em;            
         }
-        .c-menu{
+        .c-menu-desktop{
             display: flex;
             list-style: none;
             position: relative;
@@ -59,7 +59,7 @@ $secondColor: orange;
             padding:0;            
             &__item{       
                 &:hover{
-                    .c-menu__dropdown-item{
+                    .c-menu-desktop__dropdown-item{
                         a{
                         display: block;}
                     }
