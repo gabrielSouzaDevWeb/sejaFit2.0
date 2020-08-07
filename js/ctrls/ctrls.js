@@ -1,7 +1,10 @@
 class Ctrls{
     constructor(){
-        this._allContainer = document.querySelectorAll(".jsContainer");
+        this._allContainer = document.querySelectorAll(".jsContainer");//inside changeIndex();
         this._index = 0;
+        
+       
+        this.toggleMenu();
         this.toggleHeroWithTime();      
     }
 
@@ -23,7 +26,34 @@ class Ctrls{
         });
     }
 
+    toggleMenu(){
+        let btnMenuMobile = document.querySelector(".jsBtnMenuMobile");
+        let menuMobile = document.querySelector(".jsMenuMobile");
+        let marginTopValueAfter = this.getStyleValue(menuMobile, "margin-top")
+        btnMenuMobile.addEventListener("click", e=>{
+            let marginTopValue= this.getStyleValue(menuMobile, "margin-top");
+            if(parseInt(marginTopValue) <= parseInt(marginTopValueAfter) ){
+                menuMobile.style.marginTop = "0%";
+            } else {
+                menuMobile.style.marginTop = "-120%";
+            }   
+        });
+
+    }
+    
+
     getStyleValue(tag, cssAtr){
         return window.getComputedStyle(tag, null).getPropertyValue(cssAtr);
+    }
+
+    getWidthDisplay() {
+        
+        if (window.innerWidth){
+            return  window.innerWidth;
+        } else if(document.documentElement && document.documentElement.clientWidth){
+            return document.documentElement.clientWidth;
+        } else if(document.body){
+            return document.body;
+        }
     }
 }
