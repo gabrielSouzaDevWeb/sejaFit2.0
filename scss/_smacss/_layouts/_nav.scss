@@ -38,6 +38,8 @@ $secondColor: orange;
             }
         }
     }
+    
+    
     nav{
         display: flex;
         width: 100%;
@@ -130,18 +132,88 @@ $secondColor: orange;
                                
             }           
         }
-        .c-menu-mobile{
+        .c-menu-mobile-sharp{
             display:none;
             @media only screen and (max-width:62.5em){
                 display: flex;
                 align-self: center;
-                padding: 1em;
-                
-                
-                
+                padding: 0 0.5em 0 0;            
+            }
+        }
+        .c-menu-mobile{
+            display: none;
+            @media only screen and (max-width:62.5em){
+                %has-dropdown{
+                    content: '';
+                    position: relative;
+                    transform: translateY(-50%);
+                    top: 35%;
+                    align-self: center;
+                    margin-top: 2px;                        
+                    bottom: auto;
+                    left:10%;                        
+                    width: 0;
+                    height: 0;
+                    border: 4px solid transparent;
+                    border-top: 4px solid #ffffff;
+                }
+                //display: inline-flex;
+                display: block;
+                position: absolute;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 100%;
+                top: 8vh;
+                &__item{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                }
+                &__link{
+                    background-color: $bgcolor;
+                    width: 100%;
+                    padding:{
+                        left: 35vw;
+                        right: 35vw;
+                        top: 1vh;
+                        bottom: 1vh;
+                    }
+                    color: $secondColor;
+                    text-align: center;
+                    position: relative;
+                    @include fontSans(20px);
+                    text-decoration: none;
+                    &:last-child{
+                        padding-bottom: 2vh;
+                    }
+                    
+                }
+                &__dropdown-item{
+                    display:none;
+                }
+
+                &__dropdown{
+                    
+                    &-item{
+
+                    }
+                    &-link{
+
+                    }
+                }
+
+                .has-dropdown::after{
+                    @extend %has-dropdown;
+                }
+                .has-dropdown--centerY::after{
+                    @extend %has-dropdown;
+                    left:20%;
+                    top: 0%;
+                }
             }
 
         }
-    }    
+    }
+        
 }
 @include nav($bgcolor, $secondColor);
