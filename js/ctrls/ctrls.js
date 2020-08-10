@@ -1,11 +1,10 @@
 class Ctrls{
     constructor(){
         this._allContainer = document.querySelectorAll(".jsContainer");//inside changeIndex();
-        this._index = 0;
-        
-       
+        this._index = 0;   
         this.toggleMenu();
         this.toggleHeroWithTime();      
+       
     }
 
     toggleHeroWithTime(){
@@ -32,13 +31,12 @@ class Ctrls{
         let marginTopValueAfter = this.getStyleValue(menuMobile, "margin-top")
         btnMenuMobile.addEventListener("click", e=>{
             let marginTopValue= this.getStyleValue(menuMobile, "margin-top");
-            if(parseInt(marginTopValue) <= parseInt(marginTopValueAfter) ){
+            if(parseInt(marginTopValue) <= parseInt(marginTopValueAfter)){
                 menuMobile.style.marginTop = "0%";
             } else {
                 menuMobile.style.marginTop = "-120%";
             }   
         });
-
     }
     
 
@@ -46,8 +44,7 @@ class Ctrls{
         return window.getComputedStyle(tag, null).getPropertyValue(cssAtr);
     }
 
-    getWidthDisplay() {
-        
+    getWidthDisplay(){        
         if (window.innerWidth){
             return  window.innerWidth;
         } else if(document.documentElement && document.documentElement.clientWidth){

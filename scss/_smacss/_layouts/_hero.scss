@@ -1,14 +1,13 @@
 @mixin hero(){
     .l-hero{
         position: relative;
-        top: 10vh;
+        top: 80px;
         background-color: salmon;
         z-index: -1;
         display: flex;
         justify-content: center;
        
         &-container{
-
             display: flex;
             justify-content: center;
             position: absolute;
@@ -28,9 +27,9 @@
                 grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(2,35vh);//maybe auto-rows
                 @media only screen and (max-width:62.5em) { //1000px
-                    grid-template-rows: repeat(2,25vh);
+                    grid-template-rows: repeat(2,10em);
                 }
-                grid-gap: 1px;
+                grid-gap: 3px;
                 &__item{
                     /*font-size: 2em;
                     text-align: center;

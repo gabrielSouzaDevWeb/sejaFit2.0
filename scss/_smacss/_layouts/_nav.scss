@@ -26,8 +26,7 @@ $secondColor: orange;
             height: 0;
             border: 4px solid transparent;
             border-top: 4px solid #ffffff;
-        }
-        
+        }        
         &:hover{
             background-color: $secondColor;
             &.has-dropdown::before{
@@ -37,13 +36,11 @@ $secondColor: orange;
                 border-bottom: 4px solid #ffffff;
             }
         }
-    }
-    
-    
+    }   
     nav{
         display: flex;
         width: 100%;
-        height: 65px;
+        height: 58px;
         background-color: $bgcolor;
         justify-content:center;
         position: fixed;
@@ -60,8 +57,7 @@ $secondColor: orange;
                 margin: 0 1em;
                 height: 50px;
                 width: 50px;
-                max-height: 50px;
-                
+                max-height: 50px;                
             }           
         }
         .c-menu-desktop{
@@ -98,8 +94,7 @@ $secondColor: orange;
                         border-bottom: 2px solid $bgcolor;
                     }
                 }                    
-            }
-            
+            }            
             &__dropdown{
                 background-color: $bgcolor;
                 position: absolute;
@@ -111,8 +106,7 @@ $secondColor: orange;
                 margin-top: -1px;                
                 &-item{
                     list-style: none;
-                    list-style-image:none;
-                    
+                    list-style-image:none;                    
                 }    
                 &-link{
                     @include fontSans(14px);
@@ -130,8 +124,7 @@ $secondColor: orange;
                 }
                 &:last-child a{
                     padding-bottom: 1em;
-                }
-                               
+                }                               
             }           
         }
         .c-menu-mobile-sharp{
@@ -159,18 +152,18 @@ $secondColor: orange;
                     border: 4px solid transparent;
                     border-top: 4px solid #ffffff;
                 }
-                //display: inline-flex;
                 display: block;
                 position: absolute;
                 flex-direction: column;
                 align-items: flex-end;
                 width: 100%;
-                margin-top: -120%;
-                top: 8vh;
+                margin-top:-120%;
+                top: 7vh;
                 transition: all 0.35s ease-out;
                 z-index: -1;
                 &__item{
                     display: flex;
+                    position: relative;
                     width: 100%;
                     margin:{
                         top:-2px;
@@ -197,30 +190,40 @@ $secondColor: orange;
                             top: 1vh;
                         }
                     }
-                    
                 }
-                &__dropdown-item{
-                    display:none;
-                }
+                &__dropdown{display: none;}
+                
+                /*=========================================================*/
+                /*                                                         */
+                /* The dropdown menu is not avaliable on the first release */
+                /*                                                         */
+                /*=========================================================*/
 
-                &__dropdown{
-                    
+                /*&__dropdown{
+                    display:inline-block;
+                    position: relative;
                     &-item{
-
+                        display: block;
+                        position: absolute;
+                        justify-content: center;
+                        width: 100%;
                     }
                     &-link{
-
+                        color: white;
+                        position: relative;
+                        background-color: rgba($color: red, $alpha: 0.5);
+                        
                     }
                 }
 
-                .has-dropdown::after{
+                /*.has-dropdown::after{
                     @extend %has-dropdown;
                 }
                 .has-dropdown--centerY::after{
                     @extend %has-dropdown;
                     left:20%;
                     top: 0%;
-                }
+                }*/
             }
 
         }
