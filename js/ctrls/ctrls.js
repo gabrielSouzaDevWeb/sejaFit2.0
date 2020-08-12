@@ -1,18 +1,28 @@
 class Ctrls{
     constructor(){
-        this._allContainer = document.querySelectorAll(".jsContainer");//inside changeIndex();
+        this._allContainer = document.querySelectorAll('.jsContainer');
+        this._dots = document.querySelectorAll('.jsDots li');
         this._index = 0;   
         this.toggleMenu();
-        this.toggleHeroWithTime();      
-       
+        this.toggleHeroWithTime();        
     }
 
     toggleHeroWithTime(){
+        this.bgDot();
         setInterval(() => {
             this.changeIndex();
+            this.bgDot();
         }, 5000);
     }
-
+    bgDot(){
+        this.resetBgDots();
+        this._dots[this._index].style.backgroundColor = 'rgb(94, 83, 83)';
+    }
+    resetBgDots(){
+        this._dots.forEach(element => {
+            element.style.backgroundColor= "white";            
+        });
+    }
     changeIndex(){
         this.resetAllIndex();
         this._allContainer[this._index].style.zIndex= `${this._allContainer.length}`;
@@ -21,20 +31,20 @@ class Ctrls{
 
     resetAllIndex(){
         this._allContainer.forEach(e => {
-            e.style.zIndex= "0";
+            e.style.zIndex= '0';
         });
     }
 
     toggleMenu(){
-        let btnMenuMobile = document.querySelector(".jsBtnMenuMobile");
-        let menuMobile = document.querySelector(".jsMenuMobile");
-        let marginTopValueAfter = this.getStyleValue(menuMobile, "margin-top")
-        btnMenuMobile.addEventListener("click", e=>{
-            let marginTopValue= this.getStyleValue(menuMobile, "margin-top");
+        let btnMenuMobile = document.querySelector('.jsBtnMenuMobile');
+        let menuMobile = document.querySelector('.jsMenuMobile');
+        let marginTopValueAfter = this.getStyleValue(menuMobile, 'margin-top')
+        btnMenuMobile.addEventListener('click', e=>{
+            let marginTopValue= this.getStyleValue(menuMobile, 'margin-top');
             if(parseInt(marginTopValue) <= parseInt(marginTopValueAfter)){
-                menuMobile.style.marginTop = "0%";
+                menuMobile.style.marginTop = '0%';
             } else {
-                menuMobile.style.marginTop = "-120%";
+                menuMobile.style.marginTop = '-120%';
             }   
         });
     }
