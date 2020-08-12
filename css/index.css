@@ -206,9 +206,39 @@ nav {
         nav .c-menu-mobile__dropdown {
           display: none; } }
 
+.c-img-roll {
+  position: static;
+  margin-top: 29em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 62.5em) {
+    .c-img-roll {
+      margin-top: 20.5em;
+      min-width: 400px; } }
+  .c-img-roll .c-img-roll__btn--previous, .c-img-roll .c-img-roll__btn--next {
+    padding: 0.5em;
+    cursor: pointer;
+    background-color: grey; }
+  .c-img-roll__list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%; }
+    .c-img-roll__list li {
+      border-size: 1px;
+      border-style: solid;
+      border-color: #5e5353;
+      border-radius: 500px;
+      cursor: pointer;
+      padding: 5px; }
+
 .l-hero {
-  position: relative;
-  top: 80px;
+  position: static;
+  margin-top: 80px;
   background-color: salmon;
   z-index: -1;
   display: flex;

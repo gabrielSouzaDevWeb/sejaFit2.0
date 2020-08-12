@@ -1,7 +1,8 @@
+@import "../_modulo/img-roll";
 @mixin hero(){
     .l-hero{
-        position: relative;
-        top: 80px;
+        position: static;
+        margin-top: 80px;
         background-color: salmon;
         z-index: -1;
         display: flex;
@@ -51,12 +52,8 @@
                 .c-board__item{
                     background-color: red;
                 }
-            }
-            
-
+            }            
         }
-
-        
     }
 }
 @include hero();

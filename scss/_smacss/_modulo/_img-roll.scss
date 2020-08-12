@@ -1,0 +1,48 @@
+$prefix: 'c-' ;
+$modulo: 'img-roll' ;
+
+.#{$prefix}#{$modulo}{
+    position: static;
+    margin:{
+        top: 29em;
+        left: auto;
+        right: auto;
+        bottom: 0;
+    }
+    @media only screen and (max-width:62.5em){margin-top: 20.5em;min-width: 400px;}
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    %__btn{
+        padding: 0.5em;
+        cursor: pointer;
+        background-color: grey;
+    }
+    &__btn{    
+        &--previous{
+            @extend %__btn;
+
+        }
+        &--next{
+            @extend %__btn;
+
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+        & li{
+            border:{
+                size:1px;
+                style:solid;
+                color: rgb(94, 83, 83);
+                radius:500px;
+            }
+            cursor: pointer;
+            padding: 5px;
+        }
+    }
+     
+}
