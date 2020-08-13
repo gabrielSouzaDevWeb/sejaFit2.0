@@ -8,7 +8,7 @@ $secondColor: orange;
         color: white;
         text-decoration: none;
         margin-top: 0;
-        padding: 3vh 1.25em 3vh 1.25em;
+        padding: 3vh 1.25em 3.5vh 1.25em;
         justify-content: center;
         background-color: transparent ;
         position: relative;
@@ -83,7 +83,7 @@ $secondColor: orange;
                     @extend %c-menu__link;
                     background-color: $secondColor;
                     padding-top: 3vh;
-                    padding-bottom: 4vh;
+                    padding-bottom: 4.5vh;
                     &::after{
                         position: absolute;
                         top: 6vh;                            

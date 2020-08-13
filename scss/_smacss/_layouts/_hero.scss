@@ -1,4 +1,4 @@
-@import "../_modulo/img-roll";
+@import "../_modulo/img-roll","../_modulo/text-box";
 @mixin hero(){
     .l-hero{
         position: static;
@@ -31,16 +31,30 @@
                     grid-template-rows: repeat(2,10em);
                 }
                 grid-gap: 3px;
-                &__item{
-                    /*font-size: 2em;
-                    text-align: center;
-                    line-height: 30vh;*/
-                    
+                /*&__item{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    padding:{
+                        left:0.5em;
+                        right: 0.5em;
+                    }
                 }
+                &__title{
+                    @include fontSans(20px);
+                    color: white;
+                    margin-bottom: -5px;
+                    //text-align: center;
+                }
+                &__text{
+                    @include fontSans(14px);
+                    color: white;
+                }*/
             }
             &:nth-child(1){
                 .c-board__item{
                     background-color: orange;
+                    
                 }
             }
             &:nth-child(2){

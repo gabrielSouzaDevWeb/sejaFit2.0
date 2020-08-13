@@ -1,0 +1,8 @@
+$prefix: 'o-' ;
+$object: 'text-box' ;
+
+.#{$prefix}#{$object}{
+    display: flex;
+    flex-direction: column;
+    
+}

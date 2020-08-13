@@ -31,7 +31,7 @@ nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   color: white;
   text-decoration: none;
   margin-top: 0;
-  padding: 3vh 1.25em 3vh 1.25em;
+  padding: 3vh 1.25em 3.5vh 1.25em;
   justify-content: center;
   background-color: transparent;
   position: relative;
@@ -93,7 +93,7 @@ nav {
     nav .c-menu-desktop__link--active {
       background-color: orange;
       padding-top: 3vh;
-      padding-bottom: 4vh; }
+      padding-bottom: 4.5vh; }
       nav .c-menu-desktop__link--active::after {
         position: absolute;
         top: 6vh;
@@ -236,6 +236,10 @@ nav {
       cursor: pointer;
       padding: 5px; }
 
+.o-text-box {
+  display: flex;
+  flex-direction: column; }
+
 .l-hero {
   position: static;
   margin-top: 80px;
@@ -258,14 +262,29 @@ nav {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 35vh);
-      grid-gap: 3px; }
+      grid-gap: 3px;
+      /*&__item{
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          padding:{
+              left:0.5em;
+              right: 0.5em;
+          }
+      }
+      &__title{
+          @include fontSans(20px);
+          color: white;
+          margin-bottom: -5px;
+          //text-align: center;
+      }
+      &__text{
+          @include fontSans(14px);
+          color: white;
+      }*/ }
       @media only screen and (max-width: 62.5em) {
         .l-hero-container .c-board {
           grid-template-rows: repeat(2, 10em); } }
-      .l-hero-container .c-board__item {
-        /*font-size: 2em;
-        text-align: center;
-        line-height: 30vh;*/ }
     .l-hero-container:nth-child(1) .c-board__item {
       background-color: orange; }
     .l-hero-container:nth-child(2) .c-board__item {
