@@ -1,10 +1,49 @@
 class Ctrls{
     constructor(){
-        this._allContainer = document.querySelectorAll('.jsContainer');
-        this._dots = document.querySelectorAll('.jsDots li');
+        this._allContainer = document.querySelectorAll('.jsContainer');//dento do método
+        this._dots = document.querySelectorAll('.jsDots li');//dentro do método
         this._index = 0;   
         this.toggleMenu();
-        this.toggleHeroWithTime();        
+        this.toggleHeroWithTime();
+        this.btnNextPrevious();
+        this.selectDot();
+    }
+
+    selectDot(){
+        this._dots.forEach((element, i) => {
+            element.addEventListener('click', e=>{
+                this.resetBgDots();
+                element.style.backgroundColor = 'rgb(94, 83, 83)';
+                this.resetAllIndex();
+                this.setIndex(i);
+            });
+        });
+    }
+
+
+    btnNextPrevious(){
+        this.btnNext();
+        this.btnPrevious();
+    }
+
+    btnNext(){
+        let btnNext = document.querySelector('.jsBtnNext');        
+        btnNext.addEventListener('click',e=>{
+            this.resetAllIndex();
+            (this._index == this._allContainer.length -1) ? this._index=0: this._index++;
+            this.setIndex();
+            this.bgDot();
+        });
+    }
+
+    btnPrevious(){
+        let btnNext =document.querySelector('.jsBtnPrevious');
+        btnNext.addEventListener('click',e=>{
+            this.resetAllIndex();
+            (this._index == 0) ? this._index=this._allContainer.length -1: this._index--;
+            this.setIndex();
+            this.bgDot();
+        });
     }
 
     toggleHeroWithTime(){
@@ -25,8 +64,12 @@ class Ctrls{
     }
     changeIndex(){
         this.resetAllIndex();
-        this._allContainer[this._index].style.zIndex= `${this._allContainer.length}`;
+        this.setIndex();
         (this._index == this._allContainer.length -1) ? this._index=0: this._index++;
+    }
+
+    setIndex(value = this._index){
+        this._allContainer[value].style.zIndex= `${this._allContainer.length}`;
     }
 
     resetAllIndex(){
