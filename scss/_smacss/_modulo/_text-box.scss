@@ -2,7 +2,37 @@ $prefix: 'o-' ;
 $object: 'text-box' ;
 
 .#{$prefix}#{$object}{
+    margin-top: -60px;
+    
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    height: 150%;
+    
+    justify-content: flex-end;
+    transition: margin 0.3s ease-out;
+    @media only screen and (max-width:62.5em){margin-top: 0; height: 90%;}
+    
+    
+    padding:0.5rem;
+    
+    &__title{
+        margin:0;
+        @include fontSans(20px);
+        color: whitesmoke;
+        @media only screen and (max-width:62.5em){@include fontSans(12px)}
+    }
+    &__text{
+        margin:{
+            top:2rem;
+        }
+        @include fontSans(13px);
+        color: whitesmoke;
+        @media only screen and (max-width:62.5em){display: none;}
+        transition: margin 0.3s ease-out;
+    }
     
 }
+
+
+

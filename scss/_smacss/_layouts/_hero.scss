@@ -12,11 +12,13 @@
             display: flex;
             justify-content: center;
             position: absolute;
-            width: 100%;
-            max-width: 70%;
+            width: 75%;
+            max-width: 90%;
             min-width: 400px;
             @media only screen and (max-width:62.5em) { //1000px
-                
+                width: 100%;
+                max-width: 90%;
+                min-width: 400px;
             }
             margin: 0;
             .c-board{
@@ -26,21 +28,32 @@
                 display: grid;
                 //margin: 0;
                 grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(2,35vh);//maybe auto-rows
+                grid-template-rows: repeat(2,38vh);//maybe auto-rows
                 @media only screen and (max-width:62.5em) { //1000px
                     grid-template-rows: repeat(2,10em);
                 }
                 grid-gap: 3px;
-                /*&__item{
-                    display: flex;
-                    justify-content: flex-end;
-                    flex-direction: column;
-                    padding:{
-                        left:0.5em;
-                        right: 0.5em;
+                &__item{
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+                @media only screen and (min-width:62.51em){
+                    .c-board__item:hover{
+                        
+                        .#{$prefix}#{$object}{
+                            margin-top: -130px;
+                            background-color: rgba($color: rgb(49, 34, 0), $alpha: 0.5);
+                            &__text{
+                            margin:{
+                                top:0.5rem;
+                            }
+
+                           
+                        }
+                        
+                        }
                     }
                 }
-                &__title{
+                /*&__title{
                     @include fontSans(20px);
                     color: white;
                     margin-bottom: -5px;
@@ -53,13 +66,21 @@
             }
             &:nth-child(1){
                 .c-board__item{
-                    background-color: orange;
-                    
+                    background-color: green;
+
+                    &:first-child{
+                        background:{
+                            image: url('../img/img.jpeg');
+                            size:cover;
+                            position: center;
+                        }
+
+                    }
                 }
             }
             &:nth-child(2){
                 .c-board__item{
-                    background-color: green;
+                    background-color: orange;
                 }
             }
             &:nth-child(3){
