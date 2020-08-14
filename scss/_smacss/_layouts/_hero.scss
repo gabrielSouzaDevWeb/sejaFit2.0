@@ -2,7 +2,7 @@
 @mixin hero(){
     .l-hero{
         position: static;
-        margin-top: 80px;
+        margin-top: 64px;
         background-color: salmon;
         z-index: -1;
         display: flex;
@@ -40,7 +40,7 @@
                     .c-board__item:hover{
                         
                         .#{$prefix}#{$object}{
-                            margin-top: -130px;
+                            margin-top: -140px;
                             background-color: rgba($color: rgb(49, 34, 0), $alpha: 0.5);
                             &__text{
                                 margin:{

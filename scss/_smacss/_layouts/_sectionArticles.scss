@@ -1,0 +1,24 @@
+@mixin l-first-section(){
+
+    .l-first-section{
+        padding-top: 2rem;
+        width: 75%;
+        margin: auto;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 10fr 4fr;
+        grid-column-gap: 0.5rem;
+    }
+
+} @include l-first-section();
+
+@mixin inside-before(){
+
+    .l-articles{
+        
+    }
+    .l-aside{
+        
+    }
+
+} @include inside-before();

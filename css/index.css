@@ -23,6 +23,9 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 0px; }
 
+a {
+  text-decoration: none; }
+
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
   font-family: 'Ubuntu', sans-serif;
@@ -31,7 +34,7 @@ nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   color: white;
   text-decoration: none;
   margin-top: 0;
-  padding: 3.25vh 1.25em 3.25vh 1.25em;
+  padding: 3vh 1.25em 3vh 1.25em;
   justify-content: center;
   background-color: transparent;
   position: relative;
@@ -207,7 +210,7 @@ nav {
           display: none; } }
 
 .c-img-roll {
-  margin-top: 32em;
+  margin-top: 35em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -239,7 +242,7 @@ nav {
       padding: 5px; }
 
 .o-text-box {
-  margin-top: -54px;
+  margin-top: -64px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -276,7 +279,7 @@ nav {
 
 .l-hero {
   position: static;
-  margin-top: 80px;
+  margin-top: 64px;
   background-color: salmon;
   z-index: -1;
   display: flex;
@@ -319,7 +322,7 @@ nav {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
       @media only screen and (min-width: 62.51em) {
         .l-hero-container .c-board .c-board__item:hover .o-text-box {
-          margin-top: -130px;
+          margin-top: -140px;
           background-color: rgba(49, 34, 0, 0.5); }
           .l-hero-container .c-board .c-board__item:hover .o-text-box__text {
             margin-top: 0.5rem;
@@ -334,5 +337,14 @@ nav {
       background-color: orange; }
     .l-hero-container:nth-child(3) .c-board__item {
       background-color: red; }
+
+.l-first-section {
+  padding-top: 2rem;
+  width: 75%;
+  margin: auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10fr 4fr;
+  grid-column-gap: 0.5rem; }
 
 /*# sourceMappingURL=index.css.map */
