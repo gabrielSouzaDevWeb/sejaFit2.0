@@ -43,13 +43,11 @@
                             margin-top: -130px;
                             background-color: rgba($color: rgb(49, 34, 0), $alpha: 0.5);
                             &__text{
-                            margin:{
-                                top:0.5rem;
-                            }
-
-                           
-                        }
-                        
+                                margin:{
+                                    top:0.5rem;
+                                } 
+                                visibility: visible;                                             
+                            }                        
                         }
                     }
                 }

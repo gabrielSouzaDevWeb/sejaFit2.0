@@ -31,7 +31,7 @@ nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   color: white;
   text-decoration: none;
   margin-top: 0;
-  padding: 3vh 1.25em 3.5vh 1.25em;
+  padding: 3.25vh 1.25em 3.25vh 1.25em;
   justify-content: center;
   background-color: transparent;
   position: relative;
@@ -207,12 +207,11 @@ nav {
           display: none; } }
 
 .c-img-roll {
-  position: static;
   margin-top: 32em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  width: 70%;
+  width: 68%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -221,7 +220,10 @@ nav {
       margin-top: 20.5em;
       min-width: 400px; } }
   .c-img-roll .c-img-roll__btn--previous, .c-img-roll .c-img-roll__btn--next {
-    padding: 0.5em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     cursor: pointer;
     background-color: grey; }
   .c-img-roll__list {
@@ -237,7 +239,7 @@ nav {
       padding: 5px; }
 
 .o-text-box {
-  margin-top: -60px;
+  margin-top: -54px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -262,6 +264,7 @@ nav {
         font-size: 12px; } }
   .o-text-box__text {
     margin-top: 2rem;
+    visibility: hidden;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 13px;
@@ -319,7 +322,8 @@ nav {
           margin-top: -130px;
           background-color: rgba(49, 34, 0, 0.5); }
           .l-hero-container .c-board .c-board__item:hover .o-text-box__text {
-            margin-top: 0.5rem; } }
+            margin-top: 0.5rem;
+            visibility: visible; } }
     .l-hero-container:nth-child(1) .c-board__item {
       background-color: green; }
       .l-hero-container:nth-child(1) .c-board__item:first-child {

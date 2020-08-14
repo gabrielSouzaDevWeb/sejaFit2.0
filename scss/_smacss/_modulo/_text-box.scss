@@ -2,7 +2,7 @@ $prefix: 'o-' ;
 $object: 'text-box' ;
 
 .#{$prefix}#{$object}{
-    margin-top: -60px;
+    margin-top: -54px;
     
     display: flex;
     flex-direction: column;
@@ -26,6 +26,8 @@ $object: 'text-box' ;
         margin:{
             top:2rem;
         }
+        //display: none;
+        visibility: hidden;
         @include fontSans(13px);
         color: whitesmoke;
         @media only screen and (max-width:62.5em){display: none;}
