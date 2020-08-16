@@ -2,7 +2,8 @@
 
     .l-wrap{
         padding-top: 2rem;
-        width: 75%;
+        width: 98%;
+        max-width: 1172px;
         margin: auto;
         height: 100vh;
         display: grid;
@@ -15,11 +16,69 @@
 
         }
     }
-    .l-articles{
-        background-color: green;
+    .l-article{
+        //background-color: green;
+        &__title-h3{//component, module
+            border-bottom: 1px solid rgba($color: grey, $alpha: 0.5); 
+            width: 100%;
+            padding-bottom: 0.25rem;
+            h3{
+                @include fontSans(22px, 400);
+                margin-bottom: 11px;
+                text-transform: capitalize;
+                color: orange;
+                &:after{
+                    content: ' ';
+                    padding-bottom: 1px;
+                    position: relative;
+                    top:0.99rem;
+                    width: 7rem;
+                    display: flex;
+                    flex-direction: column;
+                    //border: 1px solid orange;
+                    background-color: orange;
+                }
+                &:before{
+                    content: ' ';
+                    position: relative;
+                    top: 3rem;
+                    //padding: 0.4rem;
+                    display: flex;
+                    width: 0;
+                    flex-direction: column;
+                    //background-color:orange;
+                    border: 0.2rem solid orange;
+                    border-right-color:transparent;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+
+        &__section{
+            
+            padding-top:1.5rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 35px;
+            row-gap: 25px;
+            @media only screen and (max-width:41.875em){//670px
+                grid-template-columns: 1fr ;
+            }
+            &-articles{
+                display: grid;
+                grid-template-columns: 1fr ;
+                row-gap: 1.5rem;
+            }
+        }
+        
     }
     .l-aside{
+        //background-color: red;
+    }
+
+    .c-article{
         background-color: red;
+        padding: 10em 1em;
     }
 
 

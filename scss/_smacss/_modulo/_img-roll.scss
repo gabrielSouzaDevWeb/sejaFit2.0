@@ -29,7 +29,7 @@ $modulo: 'img-roll' ;
     &__btn{    
         &--previous{
             @extend %__btn;
-
+            @media only screen and (max-width:32em){margin:-0.25em ;}
         }
         &--next{
             @extend %__btn;

@@ -2,6 +2,8 @@
 @mixin hero(){
     .l-hero{
         position: static;
+        
+        //max-width: ;
         margin-top: 64px;
         background-color: salmon;
         z-index: -1;
@@ -12,12 +14,12 @@
             display: flex;
             justify-content: center;
             position: absolute;
-            width: 75%;
-            max-width: 90%;
+            width: 98%;
+            max-width: 1172px;
             min-width: 400px;
             @media only screen and (max-width:62.5em) { //1000px
-                width: 100%;
-                max-width: 90%;
+                width: 95%;
+                //max-width: 90%;
                 min-width: 400px;
             }
             margin: 0;

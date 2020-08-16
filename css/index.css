@@ -229,6 +229,9 @@ nav {
     padding-right: 0.5rem;
     cursor: pointer;
     background-color: grey; }
+  @media only screen and (max-width: 32em) {
+    .c-img-roll__btn--previous {
+      margin: -0.25em; } }
   .c-img-roll__list {
     display: flex;
     justify-content: space-evenly;
@@ -288,14 +291,13 @@ nav {
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 75%;
-    max-width: 90%;
+    width: 98%;
+    max-width: 1172px;
     min-width: 400px;
     margin: 0; }
     @media only screen and (max-width: 62.5em) {
       .l-hero-container {
-        width: 100%;
-        max-width: 90%;
+        width: 95%;
         min-width: 400px; } }
     .l-hero-container .c-board {
       position: absolute;
@@ -340,7 +342,8 @@ nav {
 
 .l-wrap {
   padding-top: 2rem;
-  width: 75%;
+  width: 98%;
+  max-width: 1172px;
   margin: auto;
   height: 100vh;
   display: grid;
@@ -352,10 +355,52 @@ nav {
       grid-column-gap: 0rem;
       width: 95%; } }
 
-.l-articles {
-  background-color: green; }
+.l-article__title-h3 {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  width: 100%;
+  padding-bottom: 0.25rem; }
+  .l-article__title-h3 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 11px;
+    text-transform: capitalize;
+    color: orange; }
+    .l-article__title-h3 h3:after {
+      content: ' ';
+      padding-bottom: 1px;
+      position: relative;
+      top: 0.99rem;
+      width: 7rem;
+      display: flex;
+      flex-direction: column;
+      background-color: orange; }
+    .l-article__title-h3 h3:before {
+      content: ' ';
+      position: relative;
+      top: 3rem;
+      display: flex;
+      width: 0;
+      flex-direction: column;
+      border: 0.2rem solid orange;
+      border-right-color: transparent;
+      border-bottom-color: transparent; }
+.l-article__section {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 35px;
+  row-gap: 25px; }
+  @media only screen and (max-width: 41.875em) {
+    .l-article__section {
+      grid-template-columns: 1fr; } }
+  .l-article__section-articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem; }
 
-.l-aside {
-  background-color: red; }
+.c-article {
+  background-color: red;
+  padding: 10em 1em; }
 
 /*# sourceMappingURL=index.css.map */
