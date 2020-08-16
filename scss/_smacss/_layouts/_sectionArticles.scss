@@ -1,3 +1,5 @@
+@import "../_modulo/articles-cards";
+
 @mixin articles(){
 
     .l-wrap{
@@ -75,11 +77,5 @@
     .l-aside{
         //background-color: red;
     }
-
-    .c-article{
-        background-color: red;
-        padding: 10em 1em;
-    }
-
 
 } @include articles();

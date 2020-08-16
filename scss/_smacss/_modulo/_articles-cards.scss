@@ -1,0 +1,10 @@
+$prefix: 'c-' ;
+$modulo: 'article' ;
+
+.#{$prefix}#{$modulo}{
+    background-color: red;
+    padding: 10em 1em;
+    a{
+        @include fontSans(l5);
+    }
+}
