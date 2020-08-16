@@ -2,9 +2,41 @@ $prefix: 'c-' ;
 $modulo: 'article' ;
 
 .#{$prefix}#{$modulo}{
-    background-color: red;
-    padding: 10em 1em;
-    a{
-        @include fontSans(l5);
+    //background-color: red;
+    &__bg{
+        background-image: url('../img/img.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 27vh;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
+    &__title-link{
+        @include fontSans(l2,$family:1, $weight:600);
+        line-height: 28px;
+        &:visited{
+            color: black;
+        }
+        &:hover{
+            color: orange;
+        }
+    }
+    &__text{
+        @include fontSans(s2);
+        margin-bottom:1rem;
+    }
+    
+}
+.o-flag{
+    @include btn(s3, $padding:2px, $radius:3px);
+}
+.o-btn{
+    @include btn(s1, $radius:2px, $padding:0.55rem);
+    &:hover{
+        color:white;
+    }
+
 }

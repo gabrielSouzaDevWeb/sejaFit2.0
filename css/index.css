@@ -374,17 +374,74 @@ nav {
     .l-hero-container:nth-child(3) .c-board__item {
       background-color: red; }
 
-.c-article {
-  background-color: red;
-  padding: 10em 1em; }
-  .c-article a {
+.c-article__bg {
+  background-image: url("../img/img.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 27vh;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+.c-article__title-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px; }
+  .c-article__title-link .l2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 22px; }
+  .c-article__title-link:visited {
+    color: black; }
+  .c-article__title-link:hover {
+    color: orange; }
+.c-article__text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 1rem; }
+  .c-article__text .s2 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    font-size: 28px; }
-    .c-article a .l5 {
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 300;
-      font-size: 28px; }
+    font-size: 14px; }
+
+.o-flag {
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  padding: 2px;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 12px; }
+  .o-flag .s3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 12px; }
+  .o-flag:hover {
+    background-color: #e69500; }
+  .o-flag::first-letter {
+    text-transform: uppercase; }
+
+.o-btn {
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  padding: 0.55rem;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 16px; }
+  .o-btn .s1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px; }
+  .o-btn:hover {
+    background-color: #e69500; }
+  .o-btn::first-letter {
+    text-transform: uppercase; }
+  .o-btn:hover {
+    color: white; }
 
 .l-wrap {
   padding-top: 2rem;
@@ -406,8 +463,7 @@ nav {
   width: 100%;
   padding-bottom: 0.25rem; }
   .l-article__title-h3 h3 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 22px;
     margin-bottom: 11px;
     text-transform: capitalize;
@@ -444,5 +500,8 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 1.5rem; }
+
+.l-aside {
+  padding-top: 1.5rem; }
 
 /*# sourceMappingURL=index.css.map */
