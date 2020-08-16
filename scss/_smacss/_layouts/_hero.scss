@@ -28,7 +28,7 @@
                 display: grid;
                 //margin: 0;
                 grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(2,38vh);//maybe auto-rows
+                grid-template-rows: repeat(2,minmax(15em,17em));//maybe auto-rows
                 @media only screen and (max-width:62.5em) { //1000px
                     grid-template-rows: repeat(2,10em);
                 }

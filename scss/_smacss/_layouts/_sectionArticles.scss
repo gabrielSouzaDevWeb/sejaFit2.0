@@ -1,6 +1,6 @@
-@mixin l-first-section(){
+@mixin articles(){
 
-    .l-first-section{
+    .l-wrap{
         padding-top: 2rem;
         width: 75%;
         margin: auto;
@@ -8,17 +8,19 @@
         display: grid;
         grid-template-columns: 10fr 4fr;
         grid-column-gap: 0.5rem;
+        @media only screen and (max-width:62.5em) { //1000px
+            grid-template-columns: 1fr;
+            grid-column-gap: 0rem;
+            width: 95%;
+
+        }
     }
-
-} @include l-first-section();
-
-@mixin inside-before(){
-
     .l-articles{
-        
+        background-color: green;
     }
     .l-aside{
-        
+        background-color: red;
     }
 
-} @include inside-before();
+
+} @include articles();

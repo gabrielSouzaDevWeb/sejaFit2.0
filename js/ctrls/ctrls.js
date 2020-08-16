@@ -7,6 +7,7 @@ class Ctrls{
         this.toggleHeroWithTime();
         this.btnNextPrevious();
         this.selectDot();
+        //if(toggleViewPort){refresh;}
     }
 
     selectDot(){
@@ -19,7 +20,6 @@ class Ctrls{
             });
         });
     }
-
 
     btnNextPrevious(){
         this.btnNext();
@@ -53,15 +53,18 @@ class Ctrls{
             this.bgDot();
         }, 5000);
     }
+
     bgDot(){
         this.resetBgDots();
         this._dots[this._index].style.backgroundColor = 'rgb(94, 83, 83)';
     }
+
     resetBgDots(){
         this._dots.forEach(element => {
             element.style.backgroundColor= "white";            
         });
     }
+
     changeIndex(){
         this.resetAllIndex();
         this.setIndex();
@@ -92,7 +95,6 @@ class Ctrls{
         });
     }
     
-
     getStyleValue(tag, cssAtr){
         return window.getComputedStyle(tag, null).getPropertyValue(cssAtr);
     }
