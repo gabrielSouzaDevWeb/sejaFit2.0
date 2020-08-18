@@ -6,6 +6,10 @@ body {
   height: 200vh;
   overflow-x: hidden; }
 
+main {
+  margin: 0 auto;
+  padding: 0; }
+
 ul {
   list-style: none;
   list-style-type: none;
@@ -38,6 +42,10 @@ body {
   margin: 0 auto;
   height: 200vh;
   overflow-x: hidden; }
+
+main {
+  margin: 0 auto;
+  padding: 0; }
 
 ul {
   list-style: none;
@@ -272,7 +280,7 @@ nav {
     background-color: grey; }
   @media only screen and (max-width: 32em) {
     .c-img-roll__btn--previous {
-      margin: -0.25em; } }
+      margin-left: -0.35em; } }
   .c-img-roll__list {
     display: flex;
     justify-content: space-evenly;
@@ -324,7 +332,6 @@ nav {
 .l-hero {
   position: static;
   margin-top: 64px;
-  background-color: salmon;
   z-index: -1;
   display: flex;
   justify-content: center; }
@@ -335,11 +342,11 @@ nav {
     width: 98%;
     max-width: 1172px;
     min-width: 400px;
-    margin: 0; }
+    margin: auto; }
     @media only screen and (max-width: 62.5em) {
       .l-hero-container {
         width: 95%;
-        min-width: 400px; } }
+        min-width: 398px; } }
     .l-hero-container .c-board {
       position: absolute;
       top: 0;

@@ -30,7 +30,7 @@ $modulo: 'img-roll' ;
     &__btn{    
         &--previous{
             @extend %__btn;
-            @media only screen and (max-width:32em){margin:-0.25em ;}
+            @media only screen and (max-width:32em){margin-left:-0.35em ;}
         }
         &--next{
             @extend %__btn;

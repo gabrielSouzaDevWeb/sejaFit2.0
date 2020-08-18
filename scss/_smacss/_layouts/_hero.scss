@@ -2,14 +2,10 @@
 @mixin hero(){
     .l-hero{
         position: static;
-        
-        //max-width: ;
         margin-top: 64px;
-        background-color: salmon;
         z-index: -1;
         display: flex;
-        justify-content: center;
-       
+        justify-content: center;       
         &-container{
             display: flex;
             justify-content: center;
@@ -20,9 +16,9 @@
             @media only screen and (max-width:62.5em) { //1000px
                 width: 95%;
                 //max-width: 90%;
-                min-width: 400px;
+                min-width: 398px;//400
             }
-            margin: 0;
+            margin:auto;
             .c-board{
                 position: absolute;
                 top:0;
@@ -39,8 +35,7 @@
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
                 @media only screen and (min-width:62.51em){
-                    .c-board__item:hover{
-                        
+                    .c-board__item:hover{                        
                         .#{$prefix}#{$object}{
                             margin-top: -140px;
                             background-color: rgba($color: rgb(49, 34, 0), $alpha: 0.5);
