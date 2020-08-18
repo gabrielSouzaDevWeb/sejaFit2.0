@@ -1,0 +1,45 @@
+.l-header{
+    margin-top: 58px;
+    //background-image: url('../img/img.jpeg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &__wrap{
+        margin: 0 auto;
+        width: 65%;
+        padding: 4em 0;
+    }
+
+    &__title{
+        @include fontSans (50px,2,800);
+        @media only screen and (max-width:41.875em){//670px
+
+        }
+        color: white;
+        letter-spacing: -2px;
+        margin:{
+            top:1em;
+            bottom: 0.4em;
+        }
+        &--red{
+            color: red;
+        }
+        &--orange{
+            color: orange;
+        }
+        &--small{
+            @include fontSans (2em,2,800);
+            color: white;
+        }
+    }
+    &__list-item{
+        @include fontSans (1.5em,1,600);
+        color: white;
+        &--orange{
+            @include fontSans (1.5em,1,600);
+            color:orange;
+        }
+    }
+}

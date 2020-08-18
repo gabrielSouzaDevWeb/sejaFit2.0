@@ -23,8 +23,8 @@ $boxModelPadding:2% 1% 5% 0%;
 }
 
 @mixin fontSans($size : 16px,$family: 0, $weight : 300){
-
-    @for $i from 1 through 5 {
+   
+    @for $i from 1 through 10 {
         $class: l+$i ;
         @if ($size == $class){
             $size: 18px + ($i*2);
@@ -56,6 +56,8 @@ $boxModelPadding:2% 1% 5% 0%;
             family: 'Ubuntu', sans-serif;
         } @else if($family == 1){
             family: 'Poppins', sans-serif;
+        } @else if($family == 2){
+            family: 'Roboto', sans-serif;
         }
         weight: $weight;
         size: $size;
