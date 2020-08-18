@@ -34,4 +34,7 @@ a{
     &:hover{
         color: $primaryColor;
     }
+    &:visited{
+        color:black;
+    }
 }

@@ -30,6 +30,8 @@ a {
   transition: color 0.3s ease-out; }
   a:hover {
     color: orange; }
+  a:visited {
+    color: black; }
 
 body {
   padding: 0;
@@ -61,6 +63,8 @@ a {
   transition: color 0.3s ease-out; }
   a:hover {
     color: orange; }
+  a:visited {
+    color: black; }
 
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;

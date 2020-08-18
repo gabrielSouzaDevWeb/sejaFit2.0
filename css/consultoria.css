@@ -30,6 +30,8 @@ a {
   transition: color 0.3s ease-out; }
   a:hover {
     color: orange; }
+  a:visited {
+    color: black; }
 
 body {
   padding: 0;
@@ -61,6 +63,39 @@ a {
   transition: color 0.3s ease-out; }
   a:hover {
     color: orange; }
+  a:visited {
+    color: black; }
+
+/*o-*/
+.c-whatscall {
+  background-color: #25D366;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  border-radius: 50px;
+  top: 90%;
+  position: fixed;
+  right: 1vw; }
+  @media only screen and (max-width: 41.875em) {
+    .c-whatscall {
+      top: 93%;
+      right: 3vw; } }
+  .c-whatscall__text {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: -0.8rem;
+    padding-bottom: 2px; }
+    .c-whatscall__text .s2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 14px; }
+
+.o-whatsapp {
+  padding: 0.5rem 1rem; }
 
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
@@ -254,15 +289,37 @@ nav {
   .l-header__wrap {
     margin: 0 auto;
     width: 65%;
-    padding: 4em 0; }
+    padding-top: 1em;
+    padding-bottom: 4em;
+    padding-left: 0;
+    padding-right: 0; }
+    @media only screen and (max-width: 41.875em) {
+      .l-header__wrap {
+        width: 94%;
+        padding-top: 1em;
+        padding-bottom: 4em;
+        padding-left: 0;
+        padding-right: 0; } }
   .l-header__title {
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     font-size: 50px;
     color: white;
-    letter-spacing: -2px;
+    letter-spacing: -1.7px;
     margin-top: 1em;
     margin-bottom: 0.4em; }
+    @media only screen and (max-width: 41.875em) {
+      .l-header__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 28px; }
+        .l-header__title .l5 {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 800;
+          font-size: 28px; } }
+    .l-header__title--underline {
+      text-decoration-line: underline;
+      text-decoration-color: orange; }
     .l-header__title--red {
       color: red; }
     .l-header__title--orange {
@@ -272,15 +329,42 @@ nav {
       font-weight: 800;
       font-size: 2em;
       color: white; }
+      @media only screen and (max-width: 41.875em) {
+        .l-header__title--small {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 800;
+          font-size: 26px; }
+          .l-header__title--small .l4 {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 800;
+            font-size: 26px; } }
   .l-header__list-item {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.5em;
     color: white; }
+    @media only screen and (max-width: 41.875em) {
+      .l-header__list-item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 22px; }
+        .l-header__list-item .l2 {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 800;
+          font-size: 22px; } }
     .l-header__list-item--orange {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 1.5em;
       color: orange; }
+      @media only screen and (max-width: 41.875em) {
+        .l-header__list-item--orange {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 800;
+          font-size: 28px; }
+          .l-header__list-item--orange .l5 {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 800;
+            font-size: 28px; } }
 
 /*# sourceMappingURL=consultoria.css.map */
