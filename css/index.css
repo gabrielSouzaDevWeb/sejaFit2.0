@@ -249,6 +249,7 @@ nav {
   margin-right: auto;
   margin-bottom: 0;
   width: 68%;
+  max-width: 1172px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
