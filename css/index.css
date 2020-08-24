@@ -426,13 +426,7 @@ nav {
   background-color: orange;
   color: white;
   padding: 2px;
-  border-radius: 3px;
-  font-weight: 300;
-  font-size: 12px; }
-  .o-flag .s3 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 12px; }
+  border-radius: 3px; }
   .o-flag:hover {
     background-color: #e69500; }
   .o-flag::first-letter {
@@ -444,17 +438,21 @@ nav {
   color: white;
   padding: 0.55rem;
   border-radius: 2px;
-  font-weight: 300;
-  font-size: 16px; }
-  .o-btn .s1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 16px; }
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white; }
   .o-btn:hover {
     background-color: #e69500; }
   .o-btn::first-letter {
     text-transform: uppercase; }
+  .o-btn .s2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 14px; }
   .o-btn:hover {
+    color: white; }
+  .o-btn:visited {
     color: white; }
 
 .l-wrap {

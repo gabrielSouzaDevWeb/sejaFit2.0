@@ -34,9 +34,14 @@ $modulo: 'article' ;
     @include btn(s3, $padding:2px, $radius:3px);
 }
 .o-btn{
-    @include btn(s1, $radius:2px, $padding:0.55rem);
+    @include btn(s1,$padding:0.55rem, $radius:2px );
+    @include fontSans(s2, 1, 400);
+    color: white;
     &:hover{
         color:white;
+    }
+    &:visited{
+        color: white;
     }
 
 }

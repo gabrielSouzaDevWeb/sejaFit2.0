@@ -13,7 +13,6 @@ $boxModelPadding:2% 1% 5% 0%;
     color: white;
     padding: $padding;
     border-radius: $radius;
-    @include fontSans($fontSize,300);
     &:hover{
         background-color: darken($btnColor, 5%);
     }
