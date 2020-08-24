@@ -10,7 +10,7 @@
         margin: 0 auto;
         width: 65%;
         padding:{
-            top:1em;
+            top:2em;
             bottom: 4em;
             left:0;
             right: 0;
@@ -27,12 +27,13 @@
     }
 
     &__title{
-        @include fontSans (50px,2,800);
+        @include fontSans (l7,2,800);
+        text-transform: uppercase;
         @media only screen and (max-width:41.875em){//670px
-            @include fontSans (l5,2,800);
+            @include fontSans (l2,2,800);
         }
         color: white;
-        letter-spacing: -1.7px;
+        letter-spacing: -1.5px;
         margin:{
             top:1em;
             bottom: 0.4em;
@@ -41,18 +42,16 @@
             text-decoration-line: underline;
             text-decoration-color: orange;
         }
-        &--red{
-            color: red;
-        }
-        &--orange{
-            color: orange;
-        }
+        &--red{color: red;}
+        &--orange{color: orange;}
         &--small{
-            @include fontSans (2em,2,800);
-            @media only screen and (max-width:41.875em){//670px
-                @include fontSans (l4,2,800);
-            }
+            @include fontSans (l4,2,800);
+            text-transform: uppercase;
             color: white;
+            @media only screen and (max-width:41.875em){//670px
+                @include fontSans (18px,2,800);
+            }
+            
         }
     }
     &__list-item{

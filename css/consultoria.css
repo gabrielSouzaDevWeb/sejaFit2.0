@@ -297,7 +297,7 @@ nav {
   .l-header__wrap {
     margin: 0 auto;
     width: 65%;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 4em;
     padding-left: 0;
     padding-right: 0; }
@@ -311,20 +311,25 @@ nav {
   .l-header__title {
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 32px;
+    text-transform: uppercase;
     color: white;
-    letter-spacing: -1.7px;
+    letter-spacing: -1.5px;
     margin-top: 1em;
     margin-bottom: 0.4em; }
+    .l-header__title .l7 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 800;
+      font-size: 32px; }
     @media only screen and (max-width: 41.875em) {
       .l-header__title {
         font-family: 'Roboto', sans-serif;
         font-weight: 800;
-        font-size: 28px; }
-        .l-header__title .l5 {
+        font-size: 22px; }
+        .l-header__title .l2 {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 800;
-          font-size: 28px; } }
+          font-size: 22px; } }
     .l-header__title--underline {
       text-decoration-line: underline;
       text-decoration-color: orange; }
@@ -335,17 +340,18 @@ nav {
     .l-header__title--small {
       font-family: 'Roboto', sans-serif;
       font-weight: 800;
-      font-size: 2em;
+      font-size: 26px;
+      text-transform: uppercase;
       color: white; }
+      .l-header__title--small .l4 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 800;
+        font-size: 26px; }
       @media only screen and (max-width: 41.875em) {
         .l-header__title--small {
           font-family: 'Roboto', sans-serif;
           font-weight: 800;
-          font-size: 26px; }
-          .l-header__title--small .l4 {
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: 800;
-            font-size: 26px; } }
+          font-size: 18px; } }
   .l-header__list-item {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
