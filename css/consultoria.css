@@ -381,4 +381,27 @@ nav {
             font-weight: 800;
             font-size: 28px; } }
 
+.l-video {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .l-video__title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px; }
+    .l-video__title .l9 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      font-size: 36px; }
+    @media only screen and (max-width: 41.875em) {
+      .l-video__title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 22px; }
+        .l-video__title .l2 {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 700;
+          font-size: 22px; } }
+
 /*# sourceMappingURL=consultoria.css.map */
