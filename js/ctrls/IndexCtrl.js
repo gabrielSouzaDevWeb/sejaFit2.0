@@ -1,4 +1,4 @@
-class Ctrls{
+class IndexCtrls{
     constructor(){
         this._allContainer = document.querySelectorAll('.jsContainer');//dento do método
         this._dots = document.querySelectorAll('.jsDots li');//dentro do método
@@ -7,7 +7,15 @@ class Ctrls{
         this.toggleHeroWithTime();
         this.btnNextPrevious();
         this.selectDot();
+        this.startVideo();
         //if(toggleViewPort){refresh;}
+
+    }
+
+    startVideo(){
+        window.addEventListener('scroll',e=>{
+            console.log(window.scrollY);
+        })
     }
 
     selectDot(){
