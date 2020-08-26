@@ -37,6 +37,11 @@ a {
   a:visited {
     color: black; }
 
+.--iscenter {
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -73,6 +78,11 @@ a {
     color: orange; }
   a:visited {
     color: black; }
+
+.--iscenter {
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
 
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;

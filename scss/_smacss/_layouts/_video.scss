@@ -1,13 +1,53 @@
 .l-video{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    
+    padding: 2rem 1rem;
+    background-image: linear-gradient(to bottom, black, $primaryColor, white);
+    //margin: 0 auto;rgba($color: #000000, $alpha: 1.0)
+    justify-content: center;
+    //width:  100%;
+    &__border{
+        //border: 2px solid rgba($color: black, $alpha: 0.5);
+        
+        background-color: $primaryColor;
+        padding: 2rem 1rem;
+        width:80%;
+        max-width: 1100px;
+        min-width: 400px;
+        //text-align: ;
+        border-radius: 25px;
+        &-content{
+            display: flex;
+            align-items: flex-start;
+            @media only screen and (max-width:75em){
+                flex-direction: column-reverse;
+                align-items: center;
+
+            }
+        }        
+    }
+    &__text-area{
+        padding: 0.5rem;
+        justify-items: center;
+    }
+    &__text{
+        @include fontSans(18px,1,400);
+        @media only screen and (max-width:41.875em){
+            @include fontSans(s2,1,400);
+        }
+    }
     &__title{
-        text-align: center;
-        @include fontSans(l9,1,700);
+        @include fontSans(l8,1,500);
+        letter-spacing: -1.5px;
+        margin-top:0;
         @media only screen and (max-width:41.875em){
             @include fontSans(l2,1,700);
+        }
+        &--small{
+            margin-top: 0;
+            @include fontSans(l4,1,500);
+            @media only screen and (max-width:41.875em){
+                @include fontSans(l1,1,600);
+            }
         }
     }
 }

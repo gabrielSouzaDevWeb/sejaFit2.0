@@ -1,0 +1,11 @@
+.o-yt-circle{
+    ion-icon{
+        color: change-color($color: white, $alpha: 0.8);
+        padding: 0.5rem 0.5rem;
+        border-radius: 100%;
+        background-color: red;
+    }
+    &:hover{
+        color: black;
+    }
+}

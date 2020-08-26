@@ -14,16 +14,20 @@ class ConsultoriaCtrl{
     startVideo(){
         window.addEventListener('scroll',e=>{
             if(window.scrollY >= 200 && this._oneRound){                
-                this._video.setAttribute('src','https://www.youtube.com/embed/eRsGyueVLvQ?controls=0;autoplay=1;start');
+                this._video.setAttribute('src','https://www.youtube.com/embed/eRsGyueVLvQ?controls=0;autoplay=0;start');
                 this._oneRound = false;
             }
         });        
     }
 
     resizeVideo(){
-        window.addEventListener('resize', e=>{
+        this.addAllEventListener(window,'load resize', e=>{
             if (this.getWidthDisplay() <= 927) {
-                this._video.setAttribute('width', '98%');
+                this._video.setAttribute('width', '380em');
+                this._video.setAttribute('height', '200em');
+                //alert(this.getWidthDisplay());
+            } else if(this.getWidthDisplay() <= 1200){
+                this._video.setAttribute('width', '700rem');
                 this._video.setAttribute('height', '350em');
             }
         });
@@ -40,6 +44,13 @@ class ConsultoriaCtrl{
             } else {
                 menuMobile.style.marginTop = '-120%';
             }   
+        });
+    }
+
+    addAllEventListener(element,events,fun){
+        events.split(' ').forEach(event => {
+            element.addEventListener(event,fun);
+            console.log(event);
         });
     }
     

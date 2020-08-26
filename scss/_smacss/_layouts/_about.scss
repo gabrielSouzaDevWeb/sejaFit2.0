@@ -1,0 +1,8 @@
+.l-about{
+    //display: flex;
+    &__title{
+        @include fontSans(l15,1,800);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

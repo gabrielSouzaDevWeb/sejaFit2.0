@@ -37,6 +37,11 @@ a {
   a:visited {
     color: black; }
 
+.--iscenter {
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -74,6 +79,11 @@ a {
   a:visited {
     color: black; }
 
+.--iscenter {
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
+
 /*o-*/
 .c-whatscall {
   background-color: #25D366;
@@ -105,6 +115,23 @@ a {
 .o-whatsapp {
   padding: 0.5rem 1rem; }
 
+.o-ig-circle ion-icon {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem 0.5rem;
+  border-radius: 100%;
+  background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.o-ig-circle:hover {
+  color: white; }
+
+.o-yt-circle ion-icon {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 0.5rem;
+  border-radius: 100%;
+  background-color: red; }
+.o-yt-circle:hover {
+  color: black; }
+
+/*c-*/
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
   font-family: 'Ubuntu', sans-serif;
@@ -383,17 +410,49 @@ nav {
 
 .l-video {
   display: flex;
-  align-items: center;
-  flex-direction: column; }
-  .l-video__title {
-    text-align: center;
+  padding: 2rem 1rem;
+  background-image: linear-gradient(to bottom, black, orange, white);
+  justify-content: center; }
+  .l-video__border {
+    background-color: orange;
+    padding: 2rem 1rem;
+    width: 80%;
+    max-width: 1100px;
+    min-width: 400px;
+    border-radius: 25px; }
+    .l-video__border-content {
+      display: flex;
+      align-items: flex-start; }
+      @media only screen and (max-width: 75em) {
+        .l-video__border-content {
+          flex-direction: column-reverse;
+          align-items: center; } }
+  .l-video__text-area {
+    padding: 0.5rem;
+    justify-items: center; }
+  .l-video__text {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 36px; }
-    .l-video__title .l9 {
+    font-weight: 400;
+    font-size: 18px; }
+    @media only screen and (max-width: 41.875em) {
+      .l-video__text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px; }
+        .l-video__text .s2 {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 400;
+          font-size: 14px; } }
+  .l-video__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: -1.5px;
+    margin-top: 0; }
+    .l-video__title .l8 {
       font-family: 'Ubuntu', sans-serif;
-      font-weight: 700;
-      font-size: 36px; }
+      font-weight: 500;
+      font-size: 34px; }
     @media only screen and (max-width: 41.875em) {
       .l-video__title {
         font-family: 'Poppins', sans-serif;
@@ -403,5 +462,34 @@ nav {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 700;
           font-size: 22px; } }
+    .l-video__title--small {
+      margin-top: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 26px; }
+      .l-video__title--small .l4 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 26px; }
+      @media only screen and (max-width: 41.875em) {
+        .l-video__title--small {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          font-size: 20px; }
+          .l-video__title--small .l1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+            font-size: 20px; } }
+
+.l-about__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center; }
+  .l-about__title .l15 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    font-size: 48px; }
 
 /*# sourceMappingURL=consultoria.css.map */
