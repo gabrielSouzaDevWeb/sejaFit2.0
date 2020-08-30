@@ -1,5 +1,10 @@
 @import '_smacss/_base/normalize';
 @import '_smacss/_u-/mixin';
-/*o-*/@import '_smacss/_modulo/whatsCall', '_smacss/_modulo/ig-circle', '_smacss/_modulo/yt-circle', '_smacss/_modulo/bouncein';
+/*o-*/
+@import '_smacss/_modulo/whatsCall',
+'_smacss/_modulo/ig-circle', 
+'_smacss/_modulo/yt-circle',
+'_smacss/_modulo/bouncein',
+'_smacss/_modulo/about-cards';
 /*c-*/@import '_smacss/_modulo/about-cards';
 @import '_smacss/_layouts/nav', '_smacss/_layouts/header', '_smacss/_layouts/video', '_smacss/_layouts/about';

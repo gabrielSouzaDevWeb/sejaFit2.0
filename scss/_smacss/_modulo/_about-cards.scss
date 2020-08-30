@@ -1,0 +1,47 @@
+.c-about-cards{
+    width: 24em;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    @media only screen and (max-width:50em){
+        padding-top: 1em ;
+        box-shadow:none;
+    }
+    &__bg{
+        //width: inherit;
+        height: 14em;
+        background-image: url('../img/img.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__text-area{
+        padding:{
+            top:0;
+            left: 2em;
+            right: 2em;
+            bottom: 1em;
+        }
+    }
+    &__title{
+        @include fontSans(l3,0,400);
+        //text-align: center;
+        position: relative;
+        text-transform: capitalizeabout;
+        display: flex;
+        justify-content: center;
+        &::after{
+            content: ' ';
+            margin: 0 auto;
+            background: orange;
+            border: 1px solid orange;
+            width: 40%;
+            position: absolute;
+            //left: 4.8rem;
+            justify-self: center;
+            bottom: -1.2rem;
+        }
+    }
+    &__text{
+        padding-top: 1em;
+        @include fontSans(s1,1,300)
+    }
+}

@@ -3,16 +3,12 @@
     padding: 2rem 1rem;
     background-image: linear-gradient(to bottom, black, $primaryColor, white);
     justify-content: center;
-    //width:  100%;
     &__border{
-        //border: 2px solid rgba($color: black, $alpha: 0.5);
-        
-        background-color: $primaryColor;
+       background-color: $primaryColor;
         padding: 1rem 2rem;
         width:75%;
         max-width: 1100px;
         min-width: 380px;
-        //text-align: ;
         border-radius: 25px;
         &-content{
             display: flex;
@@ -20,14 +16,11 @@
             @media only screen and (max-width:75em){
                 flex-direction: column-reverse;
                 align-items: center;
-
             }
         }        
     }
     &__text-area{
         padding: 0.5rem 2rem 0 0;
-        
-        //justify-items: center;
     }
     &__text{
         @include fontSans(18px,1,400);

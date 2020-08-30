@@ -1,21 +1,21 @@
 class ConsultoriaCtrl{
     constructor(){
-        this._video = document.querySelector('.jsVideo');
-        this._oneRound = true;
+        this._video = document.querySelector('.jsVideo');        
         this.toggleMenu();
-        this.videoSection();
-        
+        this.videoSection();        
     }
 
     videoSection(){
         this.startVideo();
         this.resizeVideo();
     }
+    
     startVideo(){
+        let oneRound = true;
         window.addEventListener('scroll',e=>{
-            if(window.scrollY >= 200 && this._oneRound){                
+            if(window.scrollY >= 200 && oneRound){                
                 this._video.setAttribute('src','https://www.youtube.com/embed/eRsGyueVLvQ?controls=0;autoplay=0;start');
-                this._oneRound = false;
+                oneRound = false;
             }
         });        
     }

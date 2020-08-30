@@ -8,7 +8,8 @@ body {
 
 main {
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 2em; }
 
 ul {
   list-style: none;
@@ -50,7 +51,8 @@ body {
 
 main {
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 2em; }
 
 ul {
   list-style: none;
@@ -151,7 +153,105 @@ a {
 @keyframes bouncein {
   to {
     transform: rotate(45deg) translatey(25px) translateX(25px); } }
+.c-about-cards {
+  width: 24em;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); }
+  @media only screen and (max-width: 50em) {
+    .c-about-cards {
+      padding-top: 1em;
+      box-shadow: none; } }
+  .c-about-cards__bg {
+    height: 14em;
+    background-image: url("../img/img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .c-about-cards__text-area {
+    padding-top: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em; }
+  .c-about-cards__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    text-transform: capitalizeabout;
+    display: flex;
+    justify-content: center; }
+    .c-about-cards__title .l3 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 24px; }
+    .c-about-cards__title::after {
+      content: ' ';
+      margin: 0 auto;
+      background: orange;
+      border: 1px solid orange;
+      width: 40%;
+      position: absolute;
+      justify-self: center;
+      bottom: -1.2rem; }
+  .c-about-cards__text {
+    padding-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px; }
+    .c-about-cards__text .s1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 300;
+      font-size: 16px; }
+
 /*c-*/
+.c-about-cards {
+  width: 24em;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); }
+  @media only screen and (max-width: 50em) {
+    .c-about-cards {
+      padding-top: 1em;
+      box-shadow: none; } }
+  .c-about-cards__bg {
+    height: 14em;
+    background-image: url("../img/img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .c-about-cards__text-area {
+    padding-top: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em; }
+  .c-about-cards__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    text-transform: capitalizeabout;
+    display: flex;
+    justify-content: center; }
+    .c-about-cards__title .l3 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 24px; }
+    .c-about-cards__title::after {
+      content: ' ';
+      margin: 0 auto;
+      background: orange;
+      border: 1px solid orange;
+      width: 40%;
+      position: absolute;
+      justify-self: center;
+      bottom: -1.2rem; }
+  .c-about-cards__text {
+    padding-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px; }
+    .c-about-cards__text .s1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 300;
+      font-size: 16px; }
+
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
   font-family: 'Ubuntu', sans-serif;
@@ -498,15 +598,33 @@ nav {
             font-weight: 600;
             font-size: 20px; } }
 
-.l-about__title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-size: 48px;
-  text-transform: uppercase;
-  text-align: center; }
-  .l-about__title .l15 {
-    font-family: 'Ubuntu', sans-serif;
+.l-about {
+  /*&__window{
+      
+  }*/ }
+  .l-about__title {
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 48px; }
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0; }
+    .l-about__title .l10 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 800;
+      font-size: 38px; }
+  .l-about__flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 24em);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 2rem;
+    justify-content: space-evenly;
+    /*@media only screen and (max-width:62.5em){
+        flex-direction: column;
+        justify-content: flex-start;
+        //align-content: center; 
+        margin: 0 auto;          
+    }*/ }
 
 /*# sourceMappingURL=consultoria.css.map */
