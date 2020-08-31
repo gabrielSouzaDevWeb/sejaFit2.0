@@ -8,6 +8,7 @@
     border-radius: 50px;
     top: 90%;
     position: fixed;
+    z-index: 9999;
     @media only screen and (max-width:41.875em){//670px
         top: 93%;
         right: 3vw;

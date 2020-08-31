@@ -1,0 +1,16 @@
+.c-advant-cards{
+    width: 22em;
+    //background-color:whitesmoke;
+    color: whitesmoke;
+    &__title{
+        @include fontSans(l4,1,400);
+        margin-bottom: -1.2rem;
+        &--small{
+            @include fontSans(l1,1,400);
+            margin-bottom: 0rem;
+        }
+    }
+    &__text{
+        @include fontSans(s2,1,400)
+    }
+}

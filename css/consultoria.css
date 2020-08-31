@@ -97,6 +97,7 @@ a {
   border-radius: 50px;
   top: 90%;
   position: fixed;
+  z-index: 9999;
   right: 1vw; }
   @media only screen and (max-width: 41.875em) {
     .c-whatscall {
@@ -153,55 +154,6 @@ a {
 @keyframes bouncein {
   to {
     transform: rotate(45deg) translatey(25px) translateX(25px); } }
-.c-about-cards {
-  width: 24em;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); }
-  @media only screen and (max-width: 50em) {
-    .c-about-cards {
-      padding-top: 1em;
-      box-shadow: none; } }
-  .c-about-cards__bg {
-    height: 14em;
-    background-image: url("../img/img.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .c-about-cards__text-area {
-    padding-top: 0;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 1em; }
-  .c-about-cards__title {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    position: relative;
-    text-transform: capitalizeabout;
-    display: flex;
-    justify-content: center; }
-    .c-about-cards__title .l3 {
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 400;
-      font-size: 24px; }
-    .c-about-cards__title::after {
-      content: ' ';
-      margin: 0 auto;
-      background: orange;
-      border: 1px solid orange;
-      width: 40%;
-      position: absolute;
-      justify-self: center;
-      bottom: -1.2rem; }
-  .c-about-cards__text {
-    padding-top: 1em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px; }
-    .c-about-cards__text .s1 {
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 300;
-      font-size: 16px; }
-
 /*c-*/
 .c-about-cards {
   width: 24em;
@@ -252,6 +204,86 @@ a {
       font-weight: 300;
       font-size: 16px; }
 
+.c-about-cards {
+  width: 24em;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); }
+  @media only screen and (max-width: 50em) {
+    .c-about-cards {
+      padding-top: 1em;
+      box-shadow: none; } }
+  .c-about-cards__bg {
+    height: 14em;
+    background-image: url("../img/img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .c-about-cards__text-area {
+    padding-top: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em; }
+  .c-about-cards__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    text-transform: capitalizeabout;
+    display: flex;
+    justify-content: center; }
+    .c-about-cards__title .l3 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 24px; }
+    .c-about-cards__title::after {
+      content: ' ';
+      margin: 0 auto;
+      background: orange;
+      border: 1px solid orange;
+      width: 40%;
+      position: absolute;
+      justify-self: center;
+      bottom: -1.2rem; }
+  .c-about-cards__text {
+    padding-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px; }
+    .c-about-cards__text .s1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 300;
+      font-size: 16px; }
+
+.c-advant-cards {
+  width: 22em;
+  color: whitesmoke; }
+  .c-advant-cards__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: -1.2rem; }
+    .c-advant-cards__title .l4 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 26px; }
+    .c-advant-cards__title--small {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      margin-bottom: 0rem; }
+      .c-advant-cards__title--small .l1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 20px; }
+  .c-advant-cards__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px; }
+    .c-advant-cards__text .s2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 14px; }
+
+/*l-*/
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
   font-family: 'Ubuntu', sans-serif;
@@ -597,8 +629,14 @@ nav {
             font-family: 'Ubuntu', sans-serif;
             font-weight: 600;
             font-size: 20px; } }
+  .l-video__iframe {
+    padding-bottom: 2rem; }
+    @media only screen and (max-width: 62.5em) {
+      .l-video__iframe {
+        padding-bottom: 0; } }
 
 .l-about {
+  padding-bottom: 3rem;
   /*&__window{
       
   }*/ }
@@ -626,5 +664,29 @@ nav {
         //align-content: center; 
         margin: 0 auto;          
     }*/ }
+
+.l-advant {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 3em;
+  background-color: #723d01; }
+  .l-advant__title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    text-align: center; }
+    .l-advant__title .l8 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+      font-size: 34px; }
+  .l-advant__content {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, 22em);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 2rem;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=consultoria.css.map */

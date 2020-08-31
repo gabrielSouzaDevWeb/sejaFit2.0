@@ -1,5 +1,6 @@
 .l-about{
     //display: flex;
+    padding-bottom: 3rem;
     &__title{
         @include fontSans(l10,1,800);
         text-transform: uppercase;

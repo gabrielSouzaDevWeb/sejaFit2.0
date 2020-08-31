@@ -41,4 +41,8 @@
             }
         }
     }
+    &__iframe{
+        padding-bottom: 2rem;
+        @media only screen and (max-width:62.5em) {padding-bottom: 0;}
+    }
 }

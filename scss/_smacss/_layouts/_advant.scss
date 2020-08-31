@@ -1,0 +1,22 @@
+.l-advant{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3em;
+    //height: 40vh;
+    background-color: #723d01;
+    &__title{
+        color: white;
+        @include fontSans(l8,2,500);
+        text-align: center;
+    }
+    
+    &__content{
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(auto-fit,22em);
+        justify-content:center;
+        align-content: center;
+        grid-gap: 2rem;
+        margin: 0 auto;
+    }
+}
