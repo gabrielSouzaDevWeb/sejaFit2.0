@@ -1,20 +1,51 @@
-class IndexCtrls{
+class Main{
     constructor(){
-        this._allContainer = document.querySelectorAll('.jsContainer');//dento do método
+         /*this._allContainer = document.querySelectorAll('.jsContainer');//dento do método
         this._dots = document.querySelectorAll('.jsDots li');//dentro do método
-        this._index = 0;   
+        this._index = 0; 
+        this._video = document.querySelector('.jsVideo');   
         this.toggleMenu();
         this.toggleHeroWithTime();
         this.btnNextPrevious();
         this.selectDot();
-        this.startVideo();
+        this.startVideo();*/
+        //
+       
         //if(toggleViewPort){refresh;}
 
     }
 
+    videoSection(){
+        this.startVideo();
+        this.resizeVideo();
+    }
+    
+    startVideo(){
+        let oneRound = true;
+        window.addEventListener('scroll',e=>{
+            if(window.scrollY >= 200 && oneRound){                
+                this._video.setAttribute('src','https://www.youtube.com/embed/eRsGyueVLvQ?controls=0;autoplay=0;start');
+                oneRound = false;
+            }
+        });        
+    }
+
+    resizeVideo(){
+        this.addAllEventListener(window,'load resize', e=>{
+            if (this.getWidthDisplay() <= 927) {
+                this._video.setAttribute('width', '380em');
+                this._video.setAttribute('height', '200em');
+                //alert(this.getWidthDisplay());
+            } else if(this.getWidthDisplay() <= 1200){
+                this._video.setAttribute('width', '700rem');
+                this._video.setAttribute('height', '350em');
+            }
+        });
+    }
+
     startVideo(){
         window.addEventListener('scroll',e=>{
-            console.log(window.scrollY);
+            window.scrollY;
         })
     }
 
@@ -51,6 +82,13 @@ class IndexCtrls{
             (this._index == 0) ? this._index=this._allContainer.length -1: this._index--;
             this.setIndex();
             this.bgDot();
+        });
+    }
+
+    addAllEventListener(element,events,fun){
+        events.split(' ').forEach(event => {
+            element.addEventListener(event,fun);
+            console.log(event);
         });
     }
 
