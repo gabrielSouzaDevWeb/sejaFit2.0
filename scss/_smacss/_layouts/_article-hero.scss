@@ -23,7 +23,7 @@
     &__title{
         @include fontSans(l25,1,500);
         color: white;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         line-height: 1em;
     }
     &__article-info{
@@ -34,7 +34,7 @@
             @include fontSans(s1,1,400);
             color: white;
         }
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     &__sub{
         @include fontSans(18px, 1,400);

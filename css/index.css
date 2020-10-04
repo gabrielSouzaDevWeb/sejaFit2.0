@@ -420,6 +420,8 @@ nav {
     .l-hero-container:nth-child(3) .c-board__item {
       background-color: red; }
 
+.c-article__opacity {
+  background-color: #2d2d2d; }
 .c-article__bg {
   background-image: url("../img/img.jpeg");
   background-size: cover;
@@ -430,6 +432,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end; }
+  .c-article__bg:hover {
+    filter: opacity(70%); }
 .c-article__title-link {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;

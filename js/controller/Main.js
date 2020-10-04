@@ -140,7 +140,39 @@ class Main{
             }   
         });
     }
+
+    hasHover(tags,primaryColor, secondColor){
+        var hasHover = document.querySelectorAll(tags);
+        hasHover.forEach(element => {
+            element.parentElement.addEventListener('mouseover', e=>{
+                element.style.color = secondColor;
+                element.parentElement.style.cursor = 'pointer';
+            });
+            element.parentElement.addEventListener('mouseout', e=>{
+                element.style.color = primaryColor;                
+            }); 
+        });
+    }
     
+    displayChangeArticle(tags){
+        var articleIcon = document.querySelectorAll(tags);
+        console.dir(articleIcon);
+        articleIcon.forEach(element => {
+            element.style.display = 'none';
+            element.parentElement.addEventListener('mouseover', e=>{
+                element.style.cursor = 'pointer';
+                element.style.color = "#444";
+                element.style.display="block";
+                element.style.transform = 'scale(2) translateX(-100%) translateY(-120%)';
+            });
+            element.parentElement.addEventListener('mouseout', e=>{
+                element.style.display = 'none';
+            }); 
+        });
+    }
+    //transform: scale(2)translateX(-100%)translateY(-120%);
+    //filter: opacity(70%);
+
     getStyleValue(tag, cssAtr){
         return window.getComputedStyle(tag, null).getPropertyValue(cssAtr);
     }

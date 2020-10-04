@@ -14,7 +14,7 @@
     <nav>
         <a href="Index.html"><img src="img/logo-pp-shortcut-icon.png" alt="SejaFit" width="50px" height="50px"></a>
         <ul class="c-menu-desktop ">
-            <li class="c-menu-desktop__item"><a class="c-menu-desktop__link--active" href="Index.html">Início</a></li>
+            <li class="c-menu-desktop__item"><a class="c-menu-desktop__link" href="Index.html">Início</a></li>
             <li class="c-menu-desktop__item"><a class="c-menu-desktop__link" href="consultoria.html">Consultoria</a></li>  
             <li class="c-menu-desktop__item"><a class="c-menu-desktop__link" href="consultoria.html">métodos</a></li>
             <li class="c-menu-desktop__item"><a class="c-menu-desktop__link has-dropdown" href="">Treinos</a>
@@ -162,8 +162,9 @@
                     <span class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Ergogenico</span>
                     <span class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Creatina</span>
                     <span class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Mono hidratada</span>
-                    <div class="o-bouncein"></div>
+                    
                 </div>
+                <div class="o-bouncein"></div>
 
                 
             </div>
@@ -171,16 +172,9 @@
         </div>
     </main>
     <script>
-        var hasHover = document.querySelectorAll('ion-icon[name=bookmark]');
-        hasHover.forEach(element => {
-            element.parentElement.addEventListener('mouseover', e=>{
-                element.style.color = 'white';
-                element.parentElement.style.cursor = 'pointer';
-            });
-            element.parentElement.addEventListener('mouseout', e=>{
-                element.style.color = 'orange';                
-            }); 
-        });
+        
     </script>
+    <script src="js/controller/Main.js"></script>
+    <script src="js/article.js"></script><!--
 </body>
-</html>
+</html>-->

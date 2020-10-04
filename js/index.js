@@ -8,3 +8,4 @@ index.toggleMenu();
 index.toggleHeroWithTime();
 index.btnNextPrevious();
 index.selectDot();
+index.displayChangeArticle('ion-icon[name=reader-outline]');
