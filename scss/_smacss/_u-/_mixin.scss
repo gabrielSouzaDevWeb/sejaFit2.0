@@ -52,11 +52,13 @@ $boxModelPadding:2% 1% 5% 0%;
     }
     font:{
         @if($family == 0){
-            family: 'Ubuntu', sans-serif;
+            family: sans-serif;
         } @else if($family == 1){
-            family: 'Poppins', sans-serif;
+            family: 'Nunito', sans-serif;
         } @else if($family == 2){
             family: 'Roboto', sans-serif;
+        } @else if($family == 3){
+            family: 'Poppins', sans-serif;
         }
         weight: $weight;
         size: $size;

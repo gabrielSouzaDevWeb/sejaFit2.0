@@ -1,3 +1,4 @@
+/*g-*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
@@ -94,18 +95,55 @@ a {
 ion-icon[name=bookmark]:hover {
   color: white; }
 
-/* -o */
-.o-flag {
+/*o-*/
+.o-bouncein {
+  border: 0.2rem solid rgba(255, 255, 255, 0.7);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 3.5px;
+  transform: rotate(45deg) translateY(0px);
+  justify-self: center;
+  width: 4px;
+  height: 4px;
+  animation-name: bouncein;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; }
+
+@keyframes bouncein {
+  to {
+    transform: rotate(45deg) translatey(25px) translateX(25px); } }
+.o-category {
   text-decoration: none;
   background-color: orange;
   color: white;
-  padding: 2px;
-  border-radius: 3px; }
-  .o-flag:hover {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(238, 238, 238, 0.8);
+  color: #444;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 8px; }
+  .o-category:hover {
     background-color: #e69500; }
-  .o-flag::first-letter {
+  .o-category::first-letter {
     text-transform: uppercase; }
+  .o-category .s2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 14px; }
+  .o-category:hover {
+    color: white;
+    background-color: orange; }
+  .o-category .has-hover:hover {
+    color: orange; }
 
+/*c-*/
+/*l-*/
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
   font-family: sans-serif;
@@ -289,252 +327,52 @@ nav {
         nav .c-menu-mobile__dropdown {
           display: none; } }
 
-.c-img-roll {
-  margin-top: 35em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  width: 68%;
-  max-width: 1172px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  @media only screen and (max-width: 62.5em) {
-    .c-img-roll {
-      margin-top: 20.5em;
-      min-width: 400px; } }
-  .c-img-roll .c-img-roll__btn--previous, .c-img-roll .c-img-roll__btn--next {
-    padding-top: 0.5rem;
-    padding-bottom: 0.4rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    cursor: pointer;
-    background-color: grey; }
-  @media only screen and (max-width: 32em) {
-    .c-img-roll__btn--previous {
-      margin-left: -0.35em; } }
-  .c-img-roll__list {
-    display: flex;
-    justify-content: space-evenly;
-    width: 20%; }
-    .c-img-roll__list li {
-      border-size: 1px;
-      border-style: solid;
-      border-color: #5e5353;
-      border-radius: 500px;
-      cursor: pointer;
-      padding: 5px; }
-
-.o-text-box {
-  margin-top: -64px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  height: 150%;
-  justify-content: flex-end;
-  transition: margin 0.3s ease-out;
-  padding: 0.5rem; }
-  @media only screen and (max-width: 62.5em) {
-    .o-text-box {
-      margin-top: 0;
-      height: 90%; } }
-  .o-text-box__title {
-    margin: 0;
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    color: whitesmoke; }
-    @media only screen and (max-width: 62.5em) {
-      .o-text-box__title {
-        font-family: sans-serif;
-        font-weight: 300;
-        font-size: 12px; } }
-  .o-text-box__text {
-    margin-top: 2rem;
-    visibility: hidden;
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 13px;
-    color: whitesmoke;
-    transition: margin 0.3s ease-out; }
-    @media only screen and (max-width: 62.5em) {
-      .o-text-box__text {
-        display: none; } }
-
-.l-hero {
-  position: static;
-  margin-top: 64px;
-  z-index: -1;
-  display: flex;
-  justify-content: center; }
-  .l-hero-container {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 98%;
-    max-width: 1172px;
-    min-width: 400px;
-    margin: auto; }
-    @media only screen and (max-width: 62.5em) {
-      .l-hero-container {
-        width: 95%;
-        min-width: 398px; } }
-    .l-hero-container .c-board {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, minmax(15em, 17em));
-      grid-gap: 3px;
-      /*&__title{
-          @include fontSans(20px);
-          color: white;
-          margin-bottom: -5px;
-          //text-align: center;
-      }
-      &__text{
-          @include fontSans(14px);
-          color: white;
-      }*/ }
-      @media only screen and (max-width: 62.5em) {
-        .l-hero-container .c-board {
-          grid-template-rows: repeat(2, 10em); } }
-      .l-hero-container .c-board__item {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-      @media only screen and (min-width: 62.51em) {
-        .l-hero-container .c-board .c-board__item:hover .o-text-box {
-          margin-top: -140px;
-          background-color: rgba(49, 34, 0, 0.5); }
-          .l-hero-container .c-board .c-board__item:hover .o-text-box__text {
-            margin-top: 0.5rem;
-            visibility: visible; } }
-    .l-hero-container:nth-child(1) .c-board__item {
-      background-color: green; }
-      .l-hero-container:nth-child(1) .c-board__item:first-child {
-        background-image: url("../img/img.jpeg");
-        background-size: cover;
-        background-position: center; }
-    .l-hero-container:nth-child(2) .c-board__item {
-      background-color: orange; }
-    .l-hero-container:nth-child(3) .c-board__item {
-      background-color: red; }
-
-.c-article__bg {
-  background-image: url("../img/img.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 27vh;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end; }
-.c-article__title-link {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px; }
-  .c-article__title-link .l2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 600;
-    font-size: 22px; }
-  .c-article__title-link:visited {
-    color: black; }
-  .c-article__title-link:hover {
-    color: orange; }
-.c-article__text {
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  margin-bottom: 1rem; }
-  .c-article__text .s2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 14px; }
-
-.o-btn {
-  text-decoration: none;
-  background-color: orange;
-  color: white;
-  padding: 0.55rem;
-  border-radius: 2px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: white; }
-  .o-btn:hover {
-    background-color: #e69500; }
-  .o-btn::first-letter {
-    text-transform: uppercase; }
-  .o-btn .s2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 14px; }
-  .o-btn:hover {
-    color: white; }
-  .o-btn:visited {
-    color: white; }
-
-.l-wrap {
-  padding-top: 2rem;
-  width: 98%;
-  max-width: 1172px;
-  margin: auto;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 10fr 4fr;
-  grid-column-gap: 0.5rem; }
-  @media only screen and (max-width: 62.5em) {
-    .l-wrap {
-      grid-template-columns: 1fr;
-      grid-column-gap: 0rem;
-      width: 95%; } }
-
-.l-article__title-h3 {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+.l-article-hero {
+  margin-top: 58px;
+  height: calc(100vh - 58px);
   width: 100%;
-  padding-bottom: 0.25rem; }
-  .l-article__title-h3 h3 {
-    font-weight: 300;
-    font-size: 22px;
-    margin-bottom: 11px;
-    text-transform: capitalize;
-    color: orange; }
-    .l-article__title-h3 h3:after {
-      content: ' ';
-      padding-bottom: 1px;
-      position: relative;
-      top: 0.99rem;
-      width: 7rem;
-      display: flex;
-      flex-direction: column;
-      background-color: orange; }
-    .l-article__title-h3 h3:before {
-      content: ' ';
-      position: relative;
-      top: 3rem;
-      display: flex;
-      width: 0;
-      flex-direction: column;
-      border: 0.2rem solid orange;
-      border-right-color: transparent;
-      border-bottom-color: transparent; }
-.l-article__section {
-  padding-top: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 35px;
-  row-gap: 25px; }
-  @media only screen and (max-width: 41.875em) {
-    .l-article__section {
-      grid-template-columns: 1fr; } }
-  .l-article__section-articles {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1.5rem; }
+  background-image: url("../img/img.jpeg");
+  background-position: center center;
+  background-size: cover; }
+  .l-article-hero__shadow {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(49, 49, 49, 0.7); }
+  .l-article-hero__text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em 5em; }
+  .l-article-hero__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 68px;
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 1em; }
+    .l-article-hero__title .l25 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+      font-size: 68px; }
+  .l-article-hero__article-info {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 3rem; }
+    .l-article-hero__article-info span {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: white; }
+      .l-article-hero__article-info span .s1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 16px; }
+  .l-article-hero__sub {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    line-height: 1.7em;
+    margin-bottom: 2em; }
 
-.l-aside {
-  padding-top: 1.5rem; }
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=article.css.map */

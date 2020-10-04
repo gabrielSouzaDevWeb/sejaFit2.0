@@ -1,0 +1,45 @@
+.l-article-hero{
+    margin-top: 58px;
+    height: calc(100vh - 58px);
+    width: 100%;
+    background:{
+        image: url('../img/img.jpeg');
+        position: center center;
+        size: cover;
+        //attachment: fixed;
+        
+    }   
+    &__shadow{
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: rgb(49, 49, 49), $alpha: 0.7);
+        //padding: 5rem;
+    }
+    &__text{
+        width: 50%;
+        margin:0 auto;
+        padding: 2em 5em;
+    }
+    &__title{
+        @include fontSans(l25,1,500);
+        color: white;
+        margin-bottom: 3rem;
+        line-height: 1em;
+    }
+    &__article-info{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        span{
+            @include fontSans(s1,1,400);
+            color: white;
+        }
+        margin-bottom: 3rem;
+    }
+    &__sub{
+        @include fontSans(18px, 1,400);
+        color:white;
+        line-height: 1.7em;
+        margin-bottom: 2em;
+    }
+}

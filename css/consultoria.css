@@ -1,5 +1,8 @@
+/*g-*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
 body {
   padding: 0;
   margin: 0 auto;
@@ -43,6 +46,9 @@ a {
   justify-self: center;
   text-align: center; }
 
+ion-icon[name=bookmark]:hover {
+  color: white; }
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -85,6 +91,9 @@ a {
   align-self: center;
   justify-self: center;
   text-align: center; }
+
+ion-icon[name=bookmark]:hover {
+  color: white; }
 
 /*o-*/
 .c-whatscall {
@@ -174,7 +183,7 @@ a {
     padding-right: 2em;
     padding-bottom: 1em; }
   .c-about-cards__title {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 24px;
     position: relative;
@@ -196,7 +205,7 @@ a {
       bottom: -1.2rem; }
   .c-about-cards__text {
     padding-top: 1em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 300;
     font-size: 16px; }
     .c-about-cards__text .s1 {
@@ -223,7 +232,7 @@ a {
     padding-right: 2em;
     padding-bottom: 1em; }
   .c-about-cards__title {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 24px;
     position: relative;
@@ -245,7 +254,7 @@ a {
       bottom: -1.2rem; }
   .c-about-cards__text {
     padding-top: 1em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 300;
     font-size: 16px; }
     .c-about-cards__text .s1 {
@@ -257,7 +266,7 @@ a {
   width: 22em;
   color: whitesmoke; }
   .c-advant-cards__title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 26px;
     margin-bottom: -1.2rem; }
@@ -266,7 +275,7 @@ a {
       font-weight: 400;
       font-size: 26px; }
     .c-advant-cards__title--small {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Nunito', sans-serif;
       font-weight: 400;
       font-size: 20px;
       margin-bottom: 0rem; }
@@ -275,7 +284,7 @@ a {
         font-weight: 400;
         font-size: 20px; }
   .c-advant-cards__text {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 14px; }
     .c-advant-cards__text .s2 {
@@ -286,7 +295,7 @@ a {
 /*l-*/
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: white;
@@ -376,7 +385,7 @@ nav {
         list-style: none;
         list-style-image: none; }
       nav .c-menu-desktop__dropdown-link {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: sans-serif;
         font-weight: 300;
         font-size: 14px;
         text-decoration: none;
@@ -457,7 +466,7 @@ nav {
           color: orange;
           text-align: center;
           position: relative;
-          font-family: 'Ubuntu', sans-serif;
+          font-family: sans-serif;
           font-weight: 300;
           font-size: 20px;
           text-decoration: none; }
@@ -532,7 +541,7 @@ nav {
           font-weight: 800;
           font-size: 18px; } }
   .l-header__list-item {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 1.5em;
     color: white; }
@@ -546,7 +555,7 @@ nav {
           font-weight: 800;
           font-size: 22px; } }
     .l-header__list-item--orange {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Nunito', sans-serif;
       font-weight: 600;
       font-size: 1.5em;
       color: orange; }
@@ -582,12 +591,12 @@ nav {
   .l-video__text-area {
     padding: 0.5rem 2rem 0 0; }
   .l-video__text {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 18px; }
     @media only screen and (max-width: 41.875em) {
       .l-video__text {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-weight: 400;
         font-size: 14px; }
         .l-video__text .s2 {
@@ -595,7 +604,7 @@ nav {
           font-weight: 400;
           font-size: 14px; } }
   .l-video__title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 500;
     font-size: 34px;
     letter-spacing: -1.5px; }
@@ -605,7 +614,7 @@ nav {
       font-size: 34px; }
     @media only screen and (max-width: 41.875em) {
       .l-video__title {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-weight: 700;
         font-size: 22px; }
         .l-video__title .l2 {
@@ -613,7 +622,7 @@ nav {
           font-weight: 700;
           font-size: 22px; } }
     .l-video__title--small {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Nunito', sans-serif;
       font-weight: 500;
       font-size: 26px; }
       .l-video__title--small .l4 {
@@ -622,7 +631,7 @@ nav {
         font-size: 26px; }
       @media only screen and (max-width: 41.875em) {
         .l-video__title--small {
-          font-family: 'Poppins', sans-serif;
+          font-family: 'Nunito', sans-serif;
           font-weight: 600;
           font-size: 20px; }
           .l-video__title--small .l1 {
@@ -641,7 +650,7 @@ nav {
       
   }*/ }
   .l-about__title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 38px;
     text-transform: uppercase;

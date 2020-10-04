@@ -1,0 +1,18 @@
+/*g-*/
+
+@import '_smacss/_base/normalize';
+@import '_smacss/_u-/mixin';
+
+/*o-*/
+
+@import '_smacss/_modulo/bouncein',
+'_smacss/_modulo/category';
+
+/*c-*/
+
+
+
+/*l-*/
+
+@import '_smacss/_layouts/nav',
+'_smacss/_layouts/article-hero';
