@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <link rel="shortcut icon" href="img/logo-pp-shortcut-icon.png">
     <title>Article</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel='stylesheet' type='text/css' href='css/article.css'>
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script src='main.js'></script>
@@ -153,15 +153,17 @@
                 <div class="l-article-hero__text">                    
                     <h1 class="l-article-hero__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     <div class="l-article-hero__article-info">
-                        <span class="l-article-hero__dat" ><ion-icon name="calendar" style="transform: translateY(2px);"></ion-icon>&nbsp;1/10/2020</span>
-                        <span class="l-article-hero__dat"><ion-icon name="person" style="transform: translateY(2px);"></ion-icon>&nbsp;Dinho Personal</span>
-                        <span class="l-article-hero__dat"><ion-icon name="timer" style="transform: translateY(2px);"></ion-icon>&nbsp;4min para ler</span>
+                        <div class="l-article-hero__dat" ><ion-icon name="calendar" style="transform: translateY(2px);"></ion-icon>&nbsp;1/10/2020</div>
+                        <div class="l-article-hero__dat"><ion-icon name="person" style="transform: translateY(2px);"></ion-icon>&nbsp;Dinho Personal</div>
+                        <div class="l-article-hero__dat"><ion-icon name="timer" style="transform: translateY(2px);"></ion-icon>&nbsp;4min para ler</div>
                     </div>
                     <p class="l-article-hero__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolore magnam. Minima similique ullam deleniti, odio culpa mollitia molestias veritatis illo! Error, amet consectetur. Tenetur ut quam consequuntur porro facilis.</p>
-                    <span class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Suplementação</span>
-                    <span class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Ergogenico</span>
-                    <span class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Creatina</span>
-                    <span class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Mono hidratada</span>
+                    <div class="c-category">
+                        <div class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Suplementação</div>
+                        <div class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Ergogenico</div>
+                        <div class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Creatina</div>
+                        <div class="o-category"><ion-icon class="jsHover" name="bookmark" style="transform: translateY(2px);color:orange;"></ion-icon >&nbsp;Mono hidratada</div>
+                    </div>
                     
                 </div>
                 <a href="#down"><div class="o-bouncein"></div></a>
@@ -169,7 +171,7 @@
             </div>            
         </div>
         
-        <div class="l-article-body"><div></div>
+        <div class="l-article-body"><div class="l-article-body__lc"></div>
             
             <div class="l-article-body__center">
                 <h2>Lorem, ipsum.</h2>

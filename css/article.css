@@ -294,6 +294,10 @@ nav {
     width: 50%;
     margin: 0 auto;
     padding: 2em 5em; }
+    @media only screen and (max-width: 41.875em) {
+      .l-article-hero__text {
+        width: 90%;
+        padding: 1em 0em; } }
   .l-article-hero__title {
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
@@ -305,20 +309,29 @@ nav {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 500;
       font-size: 68px; }
+    @media only screen and (max-width: 41.875em) {
+      .l-article-hero__title {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        font-size: 42px; }
+        .l-article-hero__title .l12 {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 500;
+          font-size: 42px; } }
   .l-article-hero__article-info {
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: space-around;
+    width: 100%;
     margin-bottom: 2rem; }
-    .l-article-hero__article-info span {
+    .l-article-hero__article-info div {
       font-family: 'Nunito', sans-serif;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       color: white; }
-      .l-article-hero__article-info span .s1 {
+      .l-article-hero__article-info div .s2 {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 400;
-        font-size: 16px; }
+        font-size: 14px; }
   .l-article-hero__sub {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -326,17 +339,32 @@ nav {
     color: white;
     line-height: 1.7em;
     margin-bottom: 2em; }
+    @media only screen and (max-width: 41.875em) {
+      .l-article-hero__sub {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        font-size: 16px; }
+        .l-article-hero__sub .s1 {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 500;
+          font-size: 16px; } }
 
 .l-article-body {
   display: grid;
   grid-template-columns: 20% 50% 20%;
-  grid-template-rows: 100vh;
   grid-gap: 1rem;
   justify-content: center; }
-  .l-article-body__center {
-    height: 1000vh; }
+  @media only screen and (max-width: 41.875em) {
+    .l-article-body__lc {
+      display: none; } }
+  @media only screen and (max-width: 41.875em) {
+    .l-article-body {
+      grid-template-columns: 95%; } }
   .l-article-body__aside {
     margin-top: 8rem; }
+    @media only screen and (max-width: 41.875em) {
+      .l-article-body__aside {
+        margin-top: 2rem; } }
   .l-article-body p {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -426,6 +454,12 @@ nav {
 @keyframes bouncein {
   to {
     transform: rotate(45deg) translatey(25px) translateX(25px); } }
+.c-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%; }
+
 .o-category {
   text-decoration: none;
   background-color: orange;
@@ -437,7 +471,9 @@ nav {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  padding: 5px 8px; }
+  padding: 5px 8px;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem; }
   .o-category:hover {
     background-color: #e69500; }
   .o-category::first-letter {

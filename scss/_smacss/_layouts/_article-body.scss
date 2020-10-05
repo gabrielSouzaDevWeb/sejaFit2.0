@@ -1,16 +1,25 @@
 .l-article-body{
+    &__lc{
+        @media only screen and (max-width:41.875em){//670px
+            display: none;
+        }
+    }
     $asideDivs:20%;
     display: grid;
     grid-template-columns:$asideDivs 50% $asideDivs;
-    grid-template-rows: 100vh;
+    @media only screen and (max-width:41.875em){//670px
+        grid-template-columns:95%;
+    }
     grid-gap: 1rem;
     justify-content: center;
     &__center{
         
-        height: 1000vh;
     }
     &__aside{
-       margin-top: 8rem;
+        margin-top: 8rem;
+        @media only screen and (max-width:41.875em){//670px
+            margin-top: 2rem;
+        }
     }
     p{
         @include fontSans(l1,1,400);
