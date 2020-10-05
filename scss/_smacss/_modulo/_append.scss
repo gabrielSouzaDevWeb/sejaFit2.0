@@ -1,0 +1,18 @@
+.c-append{
+    margin-top: 2rem;
+    background: rgba($color: $primaryColor, $alpha: 0.2);
+    border-left: 5px solid $primaryColor;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    padding: 1em 2em 1em 2em;
+    grid-gap: 1rem;
+    &__col-icon{
+        
+    }
+    &__col-text{
+        //margin-top: -2em;
+    }
+    p{
+        color: orange;
+    }
+}

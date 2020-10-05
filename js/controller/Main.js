@@ -140,7 +140,7 @@ class Main{
             }   
         });
     }
-
+    /*unificar code*/
     hasHover(tags,primaryColor, secondColor){
         var hasHover = document.querySelectorAll(tags);
         hasHover.forEach(element => {
@@ -170,8 +170,7 @@ class Main{
             }); 
         });
     }
-    //transform: scale(2)translateX(-100%)translateY(-120%);
-    //filter: opacity(70%);
+    /*unificar code*/
 
     getStyleValue(tag, cssAtr){
         return window.getComputedStyle(tag, null).getPropertyValue(cssAtr);

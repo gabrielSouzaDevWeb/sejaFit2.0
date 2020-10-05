@@ -95,54 +95,6 @@ a {
 ion-icon[name=bookmark]:hover {
   color: white; }
 
-/*o-*/
-.o-bouncein {
-  border: 0.2rem solid rgba(255, 255, 255, 0.7);
-  border-top-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 3.5px;
-  transform: rotate(45deg) translateY(0px);
-  justify-self: center;
-  width: 4px;
-  height: 4px;
-  animation-name: bouncein;
-  animation-duration: 0.7s;
-  animation-timing-function: ease-in;
-  animation-direction: alternate;
-  animation-iteration-count: infinite; }
-
-@keyframes bouncein {
-  to {
-    transform: rotate(45deg) translatey(25px) translateX(25px); } }
-.o-category {
-  text-decoration: none;
-  background-color: orange;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: rgba(238, 238, 238, 0.8);
-  color: #444;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 5px 8px; }
-  .o-category:hover {
-    background-color: #e69500; }
-  .o-category::first-letter {
-    text-transform: uppercase; }
-  .o-category .s2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 600;
-    font-size: 14px; }
-  .o-category:hover {
-    color: white;
-    background-color: orange; }
-  .o-category .has-hover:hover {
-    color: orange; }
-
-/*c-*/
 /*l-*/
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
@@ -374,5 +326,130 @@ nav {
     color: white;
     line-height: 1.7em;
     margin-bottom: 2em; }
+
+.l-article-body {
+  display: grid;
+  grid-template-columns: 20% 50% 20%;
+  grid-template-rows: 100vh;
+  grid-gap: 1rem;
+  justify-content: center; }
+  .l-article-body__center {
+    height: 1000vh; }
+  .l-article-body__aside {
+    margin-top: 8rem; }
+  .l-article-body p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1e1e1e;
+    line-height: 36px;
+    margin: 2.5rem 0; }
+    .l-article-body p .l1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 20px; }
+  .l-article-body h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    color: #363636; }
+    .l-article-body h2 .l18 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 54px; }
+  .l-article-body h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #363636; }
+    .l-article-body h3 .l9 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 36px; }
+  .l-article-body li {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px; }
+    .l-article-body li .l1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 20px; }
+  .l-article-body a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: orange;
+    text-decoration: underline;
+    line-height: 36px;
+    margin: 2.5rem 0;
+    transition: background-color color 1s ease-in; }
+    .l-article-body a .l1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 20px; }
+    .l-article-body a:hover {
+      background-color: orange;
+      color: white;
+      text-decoration: none; }
+
+/*c-*/
+.c-append {
+  margin-top: 2rem;
+  background: rgba(255, 165, 0, 0.2);
+  border-left: 5px solid orange;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  padding: 1em 2em 1em 2em;
+  grid-gap: 1rem; }
+  .c-append p {
+    color: orange; }
+
+/*o-*/
+.o-bouncein {
+  border: 0.2rem solid rgba(255, 255, 255, 0.7);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 3.5px;
+  transform: rotate(45deg) translateY(0px);
+  justify-self: center;
+  width: 4px;
+  height: 4px;
+  animation-name: bouncein;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; }
+
+@keyframes bouncein {
+  to {
+    transform: rotate(45deg) translatey(25px) translateX(25px); } }
+.o-category {
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(238, 238, 238, 0.8);
+  color: #444;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 8px; }
+  .o-category:hover {
+    background-color: #e69500; }
+  .o-category::first-letter {
+    text-transform: uppercase; }
+  .o-category .s2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 14px; }
+  .o-category:hover {
+    color: white;
+    background-color: orange; }
+  .o-category .has-hover:hover {
+    color: orange; }
 
 /*# sourceMappingURL=article.css.map */
