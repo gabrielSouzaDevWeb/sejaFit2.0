@@ -293,7 +293,7 @@ nav {
   .l-article-hero__text {
     width: 50%;
     margin: 0 auto;
-    padding: 2em 5em; }
+    padding: 1em 5em; }
     @media only screen and (max-width: 41.875em) {
       .l-article-hero__text {
         width: 90%;
@@ -321,8 +321,11 @@ nav {
   .l-article-hero__article-info {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 50%;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 41.875em) {
+      .l-article-hero__article-info {
+        width: 100%; } }
     .l-article-hero__article-info div {
       font-family: 'Nunito', sans-serif;
       font-weight: 400;
@@ -432,6 +435,35 @@ nav {
   grid-gap: 1rem; }
   .c-append p {
     color: orange; }
+
+.c-social {
+  position: fixed;
+  z-index: 999;
+  top: 60vh;
+  right: 2vw;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 41.875em) {
+    .c-social {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      top: 90%;
+      bottom: 0px;
+      right: -5px;
+      background-color: white;
+      padding: 5px; } }
+  .c-social__box {
+    border-radius: 500px;
+    padding: 0.5em 0.6em;
+    margin: 0.5rem;
+    background-color: #444; }
+    @media only screen and (max-width: 41.875em) {
+      .c-social__box {
+        border-radius: 5px;
+        padding: 0.5em 1.8em;
+        margin: 0; } }
 
 /*o-*/
 .o-bouncein {

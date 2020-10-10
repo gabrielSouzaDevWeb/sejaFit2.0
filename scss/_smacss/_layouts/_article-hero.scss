@@ -19,7 +19,7 @@
     &__text{
         width: 50%;
         margin:0 auto;
-        padding: 2em 5em;
+        padding: 1em 5em;
         @media only screen and (max-width:41.875em){//670px
             width: 90%;
             padding: 1em 0em;
@@ -38,7 +38,10 @@
     &__article-info{
         display: flex;
         justify-content: space-around;
-        width: 100%;
+        width: 50%;
+        @media only screen and (max-width:41.875em){//670px
+            width: 100%;
+        }
         div{
             @include fontSans(s2,1,400);
             color: white;
