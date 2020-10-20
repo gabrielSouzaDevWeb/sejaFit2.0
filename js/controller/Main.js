@@ -140,6 +140,20 @@ class Main{
             }   
         });
     }
+    /**/
+    hasMouseOver(tagName,mouseOver,mouseOut){
+        let tag = document.querySelector(tagName);
+        tag.addEventListener('mouseover', mouseOver());
+        tag.addEventListener('mouseout', mouseOut());            
+    }
+    
+    hasMouseOverAll(tagsName,mouseOverEvent,mouseOutEvent){
+        let tag = document.querySelectorAll(tagsName);
+        tag.forEach(element =>{
+            this.hasMouseOver(element,mouseOverEvent,mouseOutEvent);            
+        }
+    }
+    /**/
     /*unificar code*/
     hasHover(tags,primaryColor, secondColor){
         var hasHover = document.querySelectorAll(tags);
