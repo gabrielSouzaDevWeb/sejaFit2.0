@@ -151,7 +151,7 @@ class Main{
         let tag = document.querySelectorAll(tagsName);
         tag.forEach(element =>{
             this.hasMouseOver(element,mouseOverEvent,mouseOutEvent);            
-        }
+        });
     }
     /**/
     /*unificar code*/
@@ -170,7 +170,6 @@ class Main{
     
     displayChangeArticle(tags){
         var articleIcon = document.querySelectorAll(tags);
-        console.dir(articleIcon);
         articleIcon.forEach(element => {
             element.style.display = 'none';
             element.parentElement.addEventListener('mouseover', e=>{

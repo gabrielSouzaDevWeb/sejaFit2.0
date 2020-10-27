@@ -8,6 +8,7 @@
 .o-category{
     @include btn(s1, $padding:5px, $radius:5px);
     background-color: change-color($color: #eee, $alpha: 0.8);
+    text-transform: capitalize;
     color: #444;    
     @include fontSans(s2, 1, 600);
     padding: 5px 8px;

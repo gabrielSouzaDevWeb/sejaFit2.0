@@ -354,7 +354,7 @@ nav {
 
 .l-article-body {
   display: grid;
-  grid-template-columns: 20% 50% 20%;
+  grid-template-columns: 13% 50% 27%;
   grid-gap: 1rem;
   justify-content: center; }
   @media only screen and (max-width: 41.875em) {
@@ -401,7 +401,8 @@ nav {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 36px; }
+    line-height: 36px;
+    margin: 1.5rem 0rem; }
     .l-article-body li .l1 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 400;
@@ -435,6 +436,25 @@ nav {
   grid-gap: 1rem; }
   .c-append p {
     color: orange; }
+  .c-append h1, .c-append h2, .c-append h3, .c-append h4, .c-append h5 {
+    color: orange; }
+  .c-append a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: orange;
+    text-decoration: underline;
+    line-height: 36px;
+    margin: 2.5rem 0;
+    transition: background-color color 1s ease-in; }
+    .c-append a .l1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 20px; }
+    .c-append a:hover {
+      background-color: orange;
+      color: white;
+      text-decoration: none; }
 
 .c-social {
   position: fixed;
@@ -445,15 +465,10 @@ nav {
   flex-direction: column; }
   @media only screen and (max-width: 41.875em) {
     .c-social {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
+      align-items: flex-end;
       width: 100%;
-      top: 90%;
       bottom: 0px;
-      right: -5px;
-      background-color: white;
-      padding: 5px; } }
+      height: 10px; } }
   .c-social__box {
     border-radius: 500px;
     padding: 0.5em 0.6em;
@@ -461,9 +476,9 @@ nav {
     background-color: #444; }
     @media only screen and (max-width: 41.875em) {
       .c-social__box {
-        border-radius: 5px;
-        padding: 0.5em 1.8em;
-        margin: 0; } }
+        /*border-radius: 5px;
+        padding:0.2em 0.5em;*/
+        margin: 0.2rem; } }
 
 /*o-*/
 .o-bouncein {
@@ -499,6 +514,7 @@ nav {
   padding: 5px;
   border-radius: 5px;
   background-color: rgba(238, 238, 238, 0.8);
+  text-transform: capitalize;
   color: #444;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;

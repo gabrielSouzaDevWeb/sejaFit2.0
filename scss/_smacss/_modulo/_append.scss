@@ -13,6 +13,22 @@
         //margin-top: -2em;
     }
     p{
-        color: orange;
+        color: $primaryColor;
+    }
+    h1,h2,h3,h4,h5{
+        color: $primaryColor;
+    }
+    a{
+        @include fontSans(l1,1,400);
+        color: rgba($color: $primaryColor, $alpha: 1.0);
+        text-decoration: underline;
+        line-height: 36px;
+        margin: 2.5rem 0;
+        transition: background-color color 1s ease-in;
+        &:hover{
+            background-color:$primaryColor;
+            color: white;
+            text-decoration: none;
+        }
     }
 }

@@ -6,7 +6,7 @@
     }
     $asideDivs:20%;
     display: grid;
-    grid-template-columns:$asideDivs 50% $asideDivs;
+    grid-template-columns:($asideDivs - 7%) 50% ($asideDivs + 7%);
     @media only screen and (max-width:41.875em){//670px
         grid-template-columns:95%;
     }
@@ -40,6 +40,7 @@
     li{
         @include fontSans(l1,1,400);
         line-height: 36px;
+        margin: 1.5rem 0rem;
         
     }
 
