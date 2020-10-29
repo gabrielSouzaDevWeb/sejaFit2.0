@@ -3,7 +3,6 @@
     height: calc(100vh - 58px);
     width: 100%;
     background:{
-        image: url('../img/img.jpeg');
         position: center center;
         size: cover;
         //attachment: fixed;
@@ -27,18 +26,20 @@
         
     }
     &__title{
-        @include fontSans(l25,1,500);
+        @include fontSans(l30,1,500);
+        
         @media only screen and (max-width:41.875em){//670px
-            @include fontSans(l12,1,500);
+            @include fontSans(l13,1,500);
         }
+        
         color: white;
         margin-bottom: 2rem;
         line-height: 1em;
     }
     &__article-info{
         display: flex;
-        justify-content: space-around;
-        width: 50%;
+        justify-content: space-between;
+        width: 80%;
         @media only screen and (max-width:41.875em){//670px
             width: 100%;
         }

@@ -10,6 +10,11 @@
     width: 4px;
     height: 4px;
 
+    @media only screen and (max-width:41.875em){
+        position: relative;
+        top: 5vh;
+    }
+
     animation-name: bouncein;
     animation-duration: 0.7s;
     animation-timing-function: ease-in;

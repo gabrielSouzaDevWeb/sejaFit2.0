@@ -159,6 +159,10 @@ ion-icon[name=bookmark]:hover {
   animation-timing-function: ease-in;
   animation-direction: alternate;
   animation-iteration-count: infinite; }
+  @media only screen and (max-width: 41.875em) {
+    .o-bouncein {
+      position: relative;
+      top: 5vh; } }
 
 @keyframes bouncein {
   to {

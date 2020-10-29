@@ -100,11 +100,18 @@ ion-icon[name=bookmark]:hover {
   background-color: orange;
   color: white;
   padding: 2px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 12px; }
   .o-flag:hover {
     background-color: #e69500; }
   .o-flag::first-letter {
     text-transform: uppercase; }
+  .o-flag .s3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 12px; }
 
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
   display: inline-flex;
@@ -423,7 +430,6 @@ nav {
 .c-article__opacity {
   background-color: #2d2d2d; }
 .c-article__bg {
-  background-image: url("../img/img.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -431,18 +437,17 @@ nav {
   padding: 0.5rem;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end; }
-  .c-article__bg:hover {
-    filter: opacity(70%); }
+  align-items: flex-end;
+  margin-bottom: 1em; }
 .c-article__title-link {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 28px; }
-  .c-article__title-link .l2 {
+  .c-article__title-link .l4 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
-    font-size: 22px; }
+    font-size: 26px; }
   .c-article__title-link:visited {
     color: black; }
   .c-article__title-link:hover {

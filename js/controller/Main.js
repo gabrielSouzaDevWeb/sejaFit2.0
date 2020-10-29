@@ -168,15 +168,24 @@ class Main{
         });
     }
     
-    displayChangeArticle(tags){
+    displayChangeArticle(tags){//refatorar
         var articleIcon = document.querySelectorAll(tags);
         articleIcon.forEach(element => {
             element.style.display = 'none';
             element.parentElement.addEventListener('mouseover', e=>{
                 element.style.cursor = 'pointer';
-                element.style.color = "#444";
-                element.style.display="block";
-                element.style.transform = 'scale(2) translateX(-100%) translateY(-120%)';
+                element.style.color = "#eee";
+                element.style.display="flex";
+                if (this.getWidthDisplay() <= 927) {
+                    element.style.transform = 'scale(2) translateX(-160%) translateY(-150%)';
+                    //alert(this.getWidthDisplay());
+                } else if(this.getWidthDisplay() <= 1200){
+                    element.style.transform = 'scale(2) translateX(-110%) translateY(-120%)';
+                } else if(this.getWidthDisplay() >= 1200) {
+                    element.style.transform = 'scale(2) translateX(-175%) translateY(-130%)'
+                }
+                //element.style.transform = 'scale(2) translateX(-110%) translateY(-120%)';
+                //element.style.transform = 'scale(2) translateX(-150%) translateY(-150%)';
             });
             element.parentElement.addEventListener('mouseout', e=>{
                 element.style.display = 'none';

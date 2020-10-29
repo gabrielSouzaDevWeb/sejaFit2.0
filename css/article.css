@@ -283,7 +283,6 @@ nav {
   margin-top: 58px;
   height: calc(100vh - 58px);
   width: 100%;
-  background-image: url("../img/img.jpeg");
   background-position: center center;
   background-size: cover; }
   .l-article-hero__shadow {
@@ -301,27 +300,27 @@ nav {
   .l-article-hero__title {
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
-    font-size: 68px;
+    font-size: 78px;
     color: white;
     margin-bottom: 2rem;
     line-height: 1em; }
-    .l-article-hero__title .l25 {
+    .l-article-hero__title .l30 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 500;
-      font-size: 68px; }
+      font-size: 78px; }
     @media only screen and (max-width: 41.875em) {
       .l-article-hero__title {
         font-family: 'Nunito', sans-serif;
         font-weight: 500;
-        font-size: 42px; }
-        .l-article-hero__title .l12 {
+        font-size: 44px; }
+        .l-article-hero__title .l13 {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 500;
-          font-size: 42px; } }
+          font-size: 44px; } }
   .l-article-hero__article-info {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: space-between;
+    width: 80%;
     margin-bottom: 2rem; }
     @media only screen and (max-width: 41.875em) {
       .l-article-hero__article-info {
@@ -497,6 +496,10 @@ nav {
   animation-timing-function: ease-in;
   animation-direction: alternate;
   animation-iteration-count: infinite; }
+  @media only screen and (max-width: 41.875em) {
+    .o-bouncein {
+      position: relative;
+      top: 5vh; } }
 
 @keyframes bouncein {
   to {

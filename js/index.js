@@ -9,3 +9,8 @@ index.toggleHeroWithTime();
 index.btnNextPrevious();
 index.selectDot();
 index.displayChangeArticle('ion-icon[name=reader-outline]');
+
+/*thumbnails dos artigos from index*/
+var bgArticles = document.querySelectorAll('.c-article__bg');
+
+bgArticles[0].style.backgroundImage = "url('../img/imgarticles/legpress.jpg')";
