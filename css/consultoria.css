@@ -170,7 +170,8 @@ ion-icon[name=bookmark]:hover {
 /*c-*/
 .c-about-cards {
   width: 24em;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.25s ease-out; }
   @media only screen and (max-width: 50em) {
     .c-about-cards {
       margin-top: 1em;
@@ -217,10 +218,13 @@ ion-icon[name=bookmark]:hover {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 300;
       font-size: 16px; }
+  .c-about-cards:hover {
+    transform: scale(1.1); }
 
 .c-about-cards {
   width: 24em;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.25s ease-out; }
   @media only screen and (max-width: 50em) {
     .c-about-cards {
       margin-top: 1em;
@@ -267,6 +271,8 @@ ion-icon[name=bookmark]:hover {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 300;
       font-size: 16px; }
+  .c-about-cards:hover {
+    transform: scale(1.1); }
 
 .c-advant-cards {
   width: 22em;
@@ -697,7 +703,7 @@ nav {
       font-size: 34px; }
   .l-advant__content {
     display: grid;
-    width: 90%;
+    width: 92%;
     grid-template-columns: repeat(auto-fit, 22em);
     justify-content: center;
     align-content: center;
