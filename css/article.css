@@ -49,6 +49,9 @@ a {
 ion-icon[name=bookmark]:hover {
   color: white; }
 
+.colorWhite {
+  color: white !important; }
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -94,6 +97,9 @@ a {
 
 ion-icon[name=bookmark]:hover {
   color: white; }
+
+.colorWhite {
+  color: white !important; }
 
 /*l-*/
 nav .c-menu-desktop__link, nav .c-menu-desktop__link--active {
@@ -351,6 +357,23 @@ nav {
           font-family: 'Ubuntu', sans-serif;
           font-weight: 500;
           font-size: 16px; } }
+  .l-article-hero__link {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    line-height: 36px;
+    margin: 2.5rem 0;
+    transition: background-color color 1s ease-in; }
+    .l-article-hero__link .l1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 20px; }
+    .l-article-hero__link:hover {
+      background-color: orange;
+      color: white;
+      text-decoration: none; }
 
 .l-article-body {
   display: grid;

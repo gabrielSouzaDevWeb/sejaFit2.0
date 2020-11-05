@@ -17,3 +17,5 @@ bgArticles[0].style.backgroundImage = "url('img/imgarticles/legpress.jpg')";
 bgArticles[1].style.backgroundImage = "url('img/imgarticles/crossmuscle.jpeg')";
 bgArticles[2].style.backgroundImage = "url('img/imgarticles/biset.jpeg')";
 bgArticles[3].style.backgroundImage = "url('img/imgarticles/trainingdivision.jpeg')";
+bgArticles[4].style.backgroundImage = "url('img/imgarticles/resultadostreino.jpg')";
+bgArticles[5].style.backgroundImage = "url('img/imgarticles/crossover.jpg')";

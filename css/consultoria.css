@@ -49,6 +49,9 @@ a {
 ion-icon[name=bookmark]:hover {
   color: white; }
 
+.colorWhite {
+  color: white !important; }
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -94,6 +97,9 @@ a {
 
 ion-icon[name=bookmark]:hover {
   color: white; }
+
+.colorWhite {
+  color: white !important; }
 
 /*o-*/
 .c-whatscall {

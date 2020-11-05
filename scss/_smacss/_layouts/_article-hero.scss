@@ -5,9 +5,9 @@
     background:{
         position: center center;
         size: cover;
-        attachment: fixed;
-        
+        attachment: fixed;        
     }
+    
        
     &__shadow{
         height: 100%;
@@ -57,5 +57,19 @@
         color:white;
         line-height: 1.7em;
         margin-bottom: 2em;
+    }
+    &__link{
+        @include fontSans(l1,1,400);
+        //color: rgba($color: $primaryColor, $alpha: 1.0);
+        color: white;
+        text-decoration: underline;
+        line-height: 36px;
+        margin: 2.5rem 0;
+        transition: background-color color 1s ease-in;
+        &:hover{
+            background-color:$primaryColor;
+            color: white;
+            text-decoration: none;
+        }
     }
 }
