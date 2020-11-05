@@ -23,7 +23,8 @@ $modulo: 'article' ;
         
     }
     &__title-link{
-        @include fontSans(l4,$family:1, $weight:600);
+        @include fontSans(l3,$family:1, $weight:700);
+        text-transform:uppercase;
         line-height: 28px;
         &:visited{
             color: black;

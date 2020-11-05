@@ -441,13 +441,14 @@ nav {
   margin-bottom: 1em; }
 .c-article__title-link {
   font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
   line-height: 28px; }
-  .c-article__title-link .l4 {
+  .c-article__title-link .l3 {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 600;
-    font-size: 26px; }
+    font-weight: 700;
+    font-size: 24px; }
   .c-article__title-link:visited {
     color: black; }
   .c-article__title-link:hover {

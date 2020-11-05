@@ -284,7 +284,8 @@ nav {
   height: calc(100vh - 58px);
   width: 100%;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .l-article-hero__shadow {
     height: 100%;
     width: 100%;
