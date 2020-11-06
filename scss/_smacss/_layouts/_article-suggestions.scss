@@ -1,0 +1,11 @@
+.l-article-suggestions{
+    width: 100%;
+    padding: 2rem;
+    padding-top: 6rem;
+    &__wrap{
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+    }
+}

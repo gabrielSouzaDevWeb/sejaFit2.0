@@ -1,5 +1,6 @@
 .sass-cache/
 *.gitig/
+*.log
 *.css.map
 *.sass.map
 *.scss.map
