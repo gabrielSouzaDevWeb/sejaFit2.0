@@ -507,12 +507,15 @@ nav {
     border-radius: 500px;
     padding: 0.5em 0.6em;
     margin: 0.5rem;
-    background-color: rgba(128, 128, 128, 0.5); }
+    background-color: rgba(128, 128, 128, 0.5);
+    transition: all 0.2s ease-in; }
     @media only screen and (max-width: 41.875em) {
       .c-social__box {
         /*border-radius: 5px;
         padding:0.2em 0.5em;*/
         margin: 0.2rem; } }
+    .c-social__box:hover {
+      transform: scale(1.2); }
 
 .c-sugart {
   width: 70%;
